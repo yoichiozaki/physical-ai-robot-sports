@@ -1,0 +1,265 @@
+{
+  "run_name": "ppo_direct_s0",
+  "seed": 0,
+  "total_timesteps": 10000000,
+  "n_envs": 10,
+  "torch_threads": 4,
+  "device": "cpu",
+  "checkpoint_freq": 1000000,
+  "ppo": {
+    "learning_rate": 0.0003,
+    "n_steps": 1024,
+    "batch_size": 4096,
+    "n_epochs": 10,
+    "gamma": 0.99,
+    "gae_lambda": 0.95,
+    "clip_range": 0.2,
+    "ent_coef": 0.0,
+    "vf_coef": 0.5,
+    "max_grad_norm": 0.5,
+    "policy_kwargs": {
+      "net_arch": {
+        "pi": [
+          256,
+          256
+        ],
+        "vf": [
+          256,
+          256
+        ]
+      },
+      "log_std_init": -0.5
+    }
+  },
+  "env": {
+    "sim": {
+      "table": {
+        "length": 2.0,
+        "width": 1.0,
+        "goal_width": 0.3,
+        "wall_thickness": 0.05,
+        "wall_height": 0.04,
+        "goal_depth": 0.15
+      },
+      "puck": {
+        "radius": 0.032,
+        "mass": 0.025,
+        "decay": 0.15,
+        "thickness": 0.008
+      },
+      "mallet": {
+        "radius": 0.048
+      },
+      "robot": {
+        "bridge_mass": 1.2,
+        "carriage_mass": 0.4,
+        "vmax": [
+          3.0,
+          3.0
+        ],
+        "amax": [
+          15.0,
+          25.0
+        ],
+        "servo_time_constant": 0.008,
+        "force_margin": 1.15,
+        "armature": 0.02,
+        "joint_damping": 0.5,
+        "position_gain": 40.0,
+        "brake_ratio": 0.85,
+        "home_offset": 0.16
+      },
+      "opponent_robot": {
+        "bridge_mass": 1.2,
+        "carriage_mass": 0.4,
+        "vmax": [
+          3.0,
+          3.0
+        ],
+        "amax": [
+          15.0,
+          25.0
+        ],
+        "servo_time_constant": 0.008,
+        "force_margin": 1.15,
+        "armature": 0.02,
+        "joint_damping": 0.5,
+        "position_gain": 40.0,
+        "brake_ratio": 0.85,
+        "home_offset": 0.16
+      },
+      "contact": {
+        "wall_restitution": 0.85,
+        "mallet_restitution": 0.7,
+        "frequency": 600.0,
+        "solimp": [
+          0.99,
+          0.99,
+          0.001
+        ]
+      },
+      "physics": {
+        "timestep": 0.001,
+        "control_dt": 0.02,
+        "motion_steps": 4
+      }
+    },
+    "reward": {
+      "goal_scored": 10.0,
+      "goal_conceded": -10.0,
+      "hit": 0.3,
+      "hit_on_target": 0.7,
+      "defense": 1.0,
+      "bad_hit": -0.5,
+      "shaping_gamma": 0.99,
+      "approach": 0.5,
+      "block_align": 1.0,
+      "energy": -0.002,
+      "illegal": -0.05,
+      "time": 0.0
+    },
+    "action_mode": "direct",
+    "action_repeat": 2,
+    "decision_min_steps": 5,
+    "decision_max_steps": 100,
+    "stages": [
+      {
+        "name": "1-strike",
+        "scenarios": {
+          "strike": 1.0
+        },
+        "opponents": [
+          "stationary"
+        ],
+        "condition": "nominal",
+        "drill_time": 5.0,
+        "match_time": 15.0,
+        "launch_speed": [
+          1.5,
+          3.5
+        ]
+      },
+      {
+        "name": "2-straight",
+        "scenarios": {
+          "straight": 0.6,
+          "strike": 0.4
+        },
+        "opponents": [
+          "stationary"
+        ],
+        "condition": "nominal",
+        "drill_time": 5.0,
+        "match_time": 15.0,
+        "launch_speed": [
+          1.5,
+          3.5
+        ]
+      },
+      {
+        "name": "3-bank",
+        "scenarios": {
+          "bank": 0.4,
+          "straight": 0.3,
+          "strike": 0.3
+        },
+        "opponents": [
+          "stationary"
+        ],
+        "condition": "nominal",
+        "drill_time": 5.0,
+        "match_time": 15.0,
+        "launch_speed": [
+          1.5,
+          4.0
+        ]
+      },
+      {
+        "name": "4-simple-opponent",
+        "scenarios": {
+          "match": 0.6,
+          "bank": 0.15,
+          "straight": 0.15,
+          "strike": 0.1
+        },
+        "opponents": [
+          "stationary",
+          "random",
+          "reactive"
+        ],
+        "condition": "randomized",
+        "drill_time": 5.0,
+        "match_time": 15.0,
+        "launch_speed": [
+          1.5,
+          4.0
+        ]
+      },
+      {
+        "name": "5-multi-opponent",
+        "scenarios": {
+          "match": 0.8,
+          "bank": 0.08,
+          "straight": 0.07,
+          "strike": 0.05
+        },
+        "opponents": [
+          "stationary",
+          "random",
+          "reactive",
+          "defensive",
+          "aggressive"
+        ],
+        "condition": "randomized",
+        "drill_time": 5.0,
+        "match_time": 15.0,
+        "launch_speed": [
+          1.5,
+          4.5
+        ]
+      }
+    ],
+    "stage": 0,
+    "hybrid_aims": [
+      -0.09,
+      -0.045,
+      0.0,
+      0.045,
+      0.09
+    ],
+    "hybrid_speeds": [
+      2.5,
+      3.5,
+      4.5
+    ],
+    "defense_offset": 0.13
+  },
+  "curriculum": [
+    [
+      0,
+      0
+    ],
+    [
+      400000,
+      1
+    ],
+    [
+      1000000,
+      2
+    ],
+    [
+      2000000,
+      3
+    ],
+    [
+      3500000,
+      4
+    ]
+  ],
+  "eval": {
+    "freq": 500000,
+    "episodes": 60,
+    "stage": 4,
+    "seed": 100000
+  }
+}

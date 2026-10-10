@@ -1,0 +1,39 @@
+{
+  "name": "physical-ai-robot-sports",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": ".."
+  },
+  "workspaceMount": "source=${localWorkspaceFolder},target=/workspaces/physical-ai-robot-sports,type=bind",
+  "workspaceFolder": "/workspaces/physical-ai-robot-sports",
+  "runArgs": ["--shm-size=2g"],
+  "mounts": [
+    "source=pai-hockey-colab-cli,target=/home/vscode/.config/colab-cli,type=volume"
+  ],
+  "hostRequirements": {
+    "gpu": "optional"
+  },
+  "containerEnv": {
+    "MUJOCO_GL": "egl",
+    "PYOPENGL_PLATFORM": "egl"
+  },
+  "remoteUser": "vscode",
+  "postCreateCommand": "pip install --no-deps -e air-hockey -e robot-arm-tennis && python -m hockey.infrastructure.doctor",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "charliermarsh.ruff",
+        "ms-toolsai.jupyter"
+      ],
+      "settings": {
+        "python.defaultInterpreterPath": "/opt/venv/bin/python",
+        "python.testing.pytestEnabled": true,
+        "python.testing.pytestArgs": ["air-hockey/tests", "robot-arm-tennis/tests"],
+        "[python]": {
+          "editor.defaultFormatter": "charliermarsh.ruff"
+        }
+      }
+    }
+  }
+}

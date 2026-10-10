@@ -1,0 +1,14 @@
+{
+  "python": "3.11.17",
+  "platform": "Linux-6.18.40.1-microsoft-standard-WSL2-x86_64-with-glibc2.36",
+  "torch": "2.14.1+cpu",
+  "cuda_available": false,
+  "gpu": null,
+  "colab": false,
+  "sim_realtime_factor": 87.0,
+  "render": "ok (egl)",
+  "train_seconds": 6.2,
+  "reload_ok": true,
+  "total_seconds": 9.0,
+  "ok": true
+}

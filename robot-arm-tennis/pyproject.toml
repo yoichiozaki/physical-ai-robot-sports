@@ -1,0 +1,61 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "robot-arm-tennis"
+version = "0.1.0"
+description = "Robot-arm tennis in MuJoCo: two 8-DOF gantry-mounted arms playing tennis with physics-based prediction and learning"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "yoichiozaki" }]
+# Compatible ranges for installability; exact versions are pinned in ../requirements/lock.txt.
+dependencies = [
+    "mujoco>=3.3,<4",
+    "gymnasium>=1.0,<2",
+    "stable-baselines3>=2.4,<3",
+    "torch>=2.3",
+    "numpy>=1.26",
+    "scipy>=1.11",
+    "matplotlib>=3.8",
+    "pandas>=2.0",
+    "pyyaml>=6.0",
+    "pillow>=10",
+]
+
+[project.optional-dependencies]
+report = ["reportlab>=4.0"]
+dev = ["pytest>=8", "ruff>=0.6"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+markers = [
+    "slow: long-running tests (deselect with -m 'not slow')",
+    "render: requires headless OpenGL (EGL/OSMesa)",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP", "NPY", "RUF", "SIM"]
+# Japanese full-width characters are intentional in user-facing strings/comments.
+ignore = ["RUF001", "RUF002", "RUF003"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["tennis"]
+
+[tool.ruff.lint.per-file-ignores]
+"src/tennis/sim/mjcf.py" = ["E501"]
+"scripts/make_*.py" = ["E501"]
+"scripts/update_readme_results.py" = ["E501"]
+"scripts/vla/render_vla_clips.py" = ["E501"]
+"scripts/league_eval.py" = ["E501"]
+"scripts/vla/summarize_vla.py" = ["E501"]
+"scripts/diagnostics/*.py" = ["E501", "B023"]

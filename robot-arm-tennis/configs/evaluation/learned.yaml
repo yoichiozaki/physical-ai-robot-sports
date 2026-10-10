@@ -1,0 +1,11 @@
+# Learned controllers (same grid and seeds as baselines.yaml -> paired comparisons).
+output: results/eval_learned
+points: 20
+workers: 0
+controllers:
+  - {name: "C: PPO direct", spec: "direct:checkpoints/ppo_direct/best_model.zip"}
+  - {name: "D: Hybrid AI", spec: "hybrid:checkpoints/ppo_hybrid/best_model.zip"}
+  - {name: "D-: Hybrid w/o adapt", spec: "hybrid_static:checkpoints/ppo_hybrid/best_model.zip"}
+opponents: [steady, random, aggressive, lob, slow]
+conditions: [nominal, randomized, unknown_wind, unknown_court]
+seeds: [20000, 20001, 20002, 20003, 20004, 20005, 20006, 20007, 20008, 20009, 20010, 20011]

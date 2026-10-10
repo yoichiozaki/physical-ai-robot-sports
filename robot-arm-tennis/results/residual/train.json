@@ -1,0 +1,21 @@
+{
+  "data": [
+    "hits_nominal.npz",
+    "hits_nominal2.npz"
+  ],
+  "train_samples": 4575,
+  "val_samples": 1143,
+  "val_error_without_model_m": 0.25316982500877605,
+  "val_error_with_model_m": 0.1609183639876766,
+  "val_median_without_m": 0.19930972155775084,
+  "val_median_with_m": 0.09303957540681472,
+  "train_seconds": 2.8,
+  "loss_history": [
+    0.07174002379179001,
+    0.05924355983734131,
+    0.08088327944278717,
+    0.055066511034965515,
+    0.06789082288742065,
+    0.05699601024389267
+  ]
+}

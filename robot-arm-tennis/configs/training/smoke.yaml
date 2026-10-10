@@ -1,0 +1,16 @@
+# Smoke test: a few hundred decisions, 2 environments (CI / quick checks).
+run_name: smoke
+seed: 0
+total_timesteps: 512
+n_envs: 2
+checkpoint_freq: 256
+ppo:
+  n_steps: 128
+  batch_size: 64
+  n_epochs: 2
+env:
+  mode: hybrid
+  points_per_episode: 2
+eval:
+  freq: 256
+  episodes: 2

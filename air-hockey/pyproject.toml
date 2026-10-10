@@ -1,0 +1,62 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "physical-ai-hockey"
+version = "0.1.0"
+description = "Adaptive Air Hockey AI: a MuJoCo air-hockey robot combining physics-based prediction and reinforcement learning"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "yoichiozaki" }]
+# Compatible ranges for installability; exact versions are pinned in requirements/lock.txt.
+dependencies = [
+    "mujoco>=3.3,<4",
+    "gymnasium>=1.0,<2",
+    "stable-baselines3>=2.4,<3",
+    "torch>=2.3",
+    "numpy>=1.26",
+    "scipy>=1.11",
+    "matplotlib>=3.8",
+    "pandas>=2.0",
+    "pyyaml>=6.0",
+    "pillow>=10",
+]
+
+[project.optional-dependencies]
+report = ["reportlab>=4.0"]
+dev = ["pytest>=8", "ruff>=0.6"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+markers = [
+    "slow: long-running tests (deselect with -m 'not slow')",
+    "render: requires headless OpenGL (EGL/OSMesa)",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+extend-exclude = ["notebooks"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP", "NPY", "RUF", "SIM"]
+# Japanese full-width characters are intentional in user-facing strings/comments.
+ignore = ["RUF001", "RUF002", "RUF003"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["hockey"]
+
+[tool.ruff.lint.per-file-ignores]
+# MJCF is generated from an XML template; long attribute lines are clearer unwrapped.
+"src/hockey/simulation/mjcf.py" = ["E501"]
+# Report/video/figure generators contain long Japanese prose and table rows.
+"scripts/make_*.py" = ["E501"]
+"scripts/benchmark.py" = ["E501"]
+# Small diagnostic scripts referenced from EXPERIMENTS.md (printing long result lines).
+"scripts/diagnostics/*.py" = ["E501", "B023"]

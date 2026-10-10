@@ -1,0 +1,56 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# Editors / OS
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+Thumbs.db
+
+# Secrets (never commit)
+.env
+*.pem
+*.key
+credentials*.json
+client_secret*.json
+token*.json
+.colab/
+
+# Large / intermediate artifacts (per project: <project>/checkpoints, results, videos, ...)
+*/checkpoints/**/*
+!*/checkpoints/README.md
+!*/checkpoints/**/final_model.zip
+!robot-arm-tennis/checkpoints/**/best_model.zip
+!robot-arm-tennis/checkpoints/**/league/*.zip
+robot-arm-tennis/videos/clips/test_*
+!*/checkpoints/**/run_info.json
+!*/checkpoints/**/progress.csv
+!*/checkpoints/**/*.json
+!*/checkpoints/**/*.pt
+!*/checkpoints/*/
+!*/checkpoints/**/*/
+robot-arm-tennis/checkpoints/smolvla_tennis/
+*/results/tmp/
+*/results/**/raw_frames/
+*/results/**/*.npz
+*/videos/clips/*.png
+*/videos/clips/concat.txt
+*/videos/frames/
+*/videos/*.tmp.mp4
+*/reports/build/
+*.log
+tb_logs/
+MUJOCO_LOG.TXT
+scratch/

@@ -1,0 +1,25 @@
+{
+  "runs": [
+    {
+      "run": "ppo_direct_s0",
+      "timesteps": 10004480,
+      "duration_min": 50.2,
+      "steps_per_s": 3321.0,
+      "n_envs": 10,
+      "where": "local CPU (Dev Container, 20 threads)"
+    },
+    {
+      "run": "ppo_hybrid_s0",
+      "timesteps": 1000960,
+      "duration_min": 43.1,
+      "steps_per_s": 387.0,
+      "n_envs": 10,
+      "where": "local CPU (Dev Container, 20 threads)"
+    }
+  ],
+  "evaluation": {
+    "matches": 2800,
+    "wall_time_min": 5.9
+  },
+  "colab_compute_units": 0.0
+}

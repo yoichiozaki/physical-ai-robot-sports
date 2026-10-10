@@ -1,0 +1,57 @@
+{
+  "runs": [
+    {
+      "run": "ppo_direct",
+      "decisions": 49152,
+      "duration_min": 39.6,
+      "decisions_per_s": 20.7,
+      "n_envs": 16,
+      "where": "local CPU (Dev Container, 20 threads)"
+    },
+    {
+      "run": "ppo_exploit_gen000",
+      "decisions": 24576,
+      "duration_min": 42.6,
+      "decisions_per_s": 9.6,
+      "n_envs": 12,
+      "where": "local CPU (Dev Container, 20 threads)"
+    },
+    {
+      "run": "ppo_hybrid",
+      "decisions": 65536,
+      "duration_min": 66.0,
+      "decisions_per_s": 16.5,
+      "n_envs": 16,
+      "where": "local CPU (Dev Container, 20 threads)"
+    },
+    {
+      "run": "ppo_hybrid_sb",
+      "decisions": 32768,
+      "duration_min": 31.4,
+      "decisions_per_s": 17.4,
+      "n_envs": 16,
+      "where": "local CPU (Dev Container, 20 threads)"
+    },
+    {
+      "run": "ppo_league",
+      "decisions": 96768,
+      "duration_min": 240.5,
+      "decisions_per_s": 6.7,
+      "n_envs": 14,
+      "where": "local CPU (Dev Container, 20 threads)"
+    },
+    {
+      "run": "ppo_league_sb",
+      "decisions": 73728,
+      "duration_min": 80.6,
+      "decisions_per_s": 15.2,
+      "n_envs": 16,
+      "where": "local CPU (Dev Container, 20 threads)"
+    }
+  ],
+  "evaluation": {
+    "matches": 1680,
+    "wall_time_min": 89.5
+  },
+  "colab_compute_units": 0.0
+}

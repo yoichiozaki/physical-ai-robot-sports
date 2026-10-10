@@ -1,0 +1,103 @@
+{
+  "snapshots": [
+    {
+      "name": "gen_000",
+      "path": "checkpoints/ppo_league/league/gen_000.zip",
+      "timesteps": 0,
+      "points_won": 6035,
+      "points": 12652,
+      "games": 3163
+    },
+    {
+      "name": "gen_001",
+      "path": "checkpoints/ppo_league/league/gen_001.zip",
+      "timesteps": 12012,
+      "points_won": 4377,
+      "points": 8920,
+      "games": 2230
+    },
+    {
+      "name": "gen_002",
+      "path": "checkpoints/ppo_league/league/gen_002.zip",
+      "timesteps": 24010,
+      "points_won": 3765,
+      "points": 7628,
+      "games": 1907
+    },
+    {
+      "name": "gen_003",
+      "path": "checkpoints/ppo_league/league/gen_003.zip",
+      "timesteps": 36008,
+      "points_won": 3054,
+      "points": 6244,
+      "games": 1561
+    },
+    {
+      "name": "gen_004",
+      "path": "checkpoints/ppo_league/league/gen_004.zip",
+      "timesteps": 48006,
+      "points_won": 2641,
+      "points": 5344,
+      "games": 1336
+    },
+    {
+      "name": "gen_005",
+      "path": "checkpoints/ppo_league/league/gen_005.zip",
+      "timesteps": 60004,
+      "points_won": 2162,
+      "points": 4372,
+      "games": 1093
+    },
+    {
+      "name": "gen_006",
+      "path": "checkpoints/ppo_league/league/gen_006.zip",
+      "timesteps": 72002,
+      "points_won": 1838,
+      "points": 3680,
+      "games": 920
+    },
+    {
+      "name": "gen_007",
+      "path": "checkpoints/ppo_league/league/gen_007.zip",
+      "timesteps": 84000,
+      "points_won": 1708,
+      "points": 3444,
+      "games": 861
+    },
+    {
+      "name": "gen_008",
+      "path": "checkpoints/ppo_league/league/gen_008.zip",
+      "timesteps": 96012,
+      "points_won": 95,
+      "points": 196,
+      "games": 49
+    }
+  ],
+  "scripted": {
+    "steady": {
+      "points_won": 2501,
+      "points": 2632,
+      "games": 658
+    },
+    "lob": {
+      "points_won": 2396,
+      "points": 2528,
+      "games": 632
+    },
+    "slow": {
+      "points_won": 2476,
+      "points": 2612,
+      "games": 653
+    },
+    "aggressive": {
+      "points_won": 1816,
+      "points": 2620,
+      "games": 655
+    },
+    "random": {
+      "points_won": 2490,
+      "points": 2708,
+      "games": 677
+    }
+  }
+}

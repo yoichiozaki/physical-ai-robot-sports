@@ -1,0 +1,53 @@
+# Hybrid physics + learning (Controller D): the policy selects the strategy
+# (defend / direct / bank-left / bank-right), the aim point and the shot speed. Decisions are
+# event-driven (one decision per shot: when the physics executor is idle again); the
+# physics-based planner executes the shot (prediction, interception timing, shot geometry).
+run_name: ppo_hybrid
+seed: 0
+total_timesteps: 1000000
+n_envs: 10
+torch_threads: 2
+device: cpu
+checkpoint_freq: 100000
+
+ppo:
+  learning_rate: 0.0003
+  n_steps: 256
+  batch_size: 512
+  n_epochs: 10
+  gamma: 0.97
+  gae_lambda: 0.95
+  clip_range: 0.2
+  ent_coef: 0.01
+  vf_coef: 0.5
+  max_grad_norm: 0.5
+  policy_kwargs:
+    net_arch: {pi: [128, 128], vf: [128, 128]}
+
+env:
+  action_mode: hybrid
+  decision_min_steps: 5     # >= 0.1 s between decisions
+  decision_max_steps: 100   # <= 2 s between decisions
+  reward:
+    goal_scored: 10.0
+    goal_conceded: -10.0
+    hit: 0.0
+    hit_on_target: 0.5
+    defense: 0.5
+    bad_hit: -0.5
+    shaping_gamma: 0.97
+    approach: 0.0
+    block_align: 0.0
+    energy: 0.0
+    illegal: 0.0
+    time: 0.0
+
+curriculum:
+  - [0, 3]
+  - [100000, 4]
+
+eval:
+  freq: 50000
+  episodes: 60
+  stage: 4
+  seed: 100000

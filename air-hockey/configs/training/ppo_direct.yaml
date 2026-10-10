@@ -1,0 +1,55 @@
+# Pure reinforcement learning (Controller C): the policy outputs the mallet target position
+# directly (Box(-1, 1, 2) mapped to the workspace) from a 16-D state vector.
+run_name: ppo_direct
+seed: 0
+total_timesteps: 10000000
+n_envs: 10
+torch_threads: 4
+device: cpu
+checkpoint_freq: 1000000
+
+ppo:
+  learning_rate: 0.0003
+  n_steps: 1024
+  batch_size: 4096
+  n_epochs: 10
+  gamma: 0.99
+  gae_lambda: 0.95
+  clip_range: 0.2
+  ent_coef: 0.0
+  vf_coef: 0.5
+  max_grad_norm: 0.5
+  policy_kwargs:
+    net_arch: {pi: [256, 256], vf: [256, 256]}
+    log_std_init: -0.5
+
+env:
+  action_mode: direct
+  action_repeat: 2          # 25 Hz decisions (control loop 50 Hz, physics 1 kHz)
+  reward:
+    goal_scored: 10.0
+    goal_conceded: -10.0
+    hit: 0.3
+    hit_on_target: 0.7
+    defense: 1.0
+    bad_hit: -0.5
+    shaping_gamma: 0.99
+    approach: 0.5
+    block_align: 1.0
+    energy: -0.002
+    illegal: -0.05
+    time: 0.0
+
+# [timestep, stage index]  (stages: 0 strike, 1 straight, 2 bank, 3 simple opponents, 4 multi-opponent + DR)
+curriculum:
+  - [0, 0]
+  - [400000, 1]
+  - [1000000, 2]
+  - [2000000, 3]
+  - [3500000, 4]
+
+eval:
+  freq: 500000
+  episodes: 60
+  stage: 4
+  seed: 100000

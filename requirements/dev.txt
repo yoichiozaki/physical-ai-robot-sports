@@ -1,0 +1,6 @@
+# Local / Dev Container: CPU build of PyTorch + runtime deps + dev tools.
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch==2.14.1+cpu
+-r base.txt
+pytest==9.1.1
+ruff==0.16.10

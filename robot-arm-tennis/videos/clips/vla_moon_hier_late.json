@@ -1,0 +1,21 @@
+{
+  "name": "vla_moon_hier_late",
+  "world": "moon",
+  "seed": 100001,
+  "mode": "hier",
+  "latency": 1.4,
+  "start": 1.6,
+  "kind": "away",
+  "instruction": "hit the ball away from the opponent",
+  "zone": "deep-left",
+  "hit": 1,
+  "in_court": 1,
+  "in_zone": 1,
+  "net": 0,
+  "landing_error_m": 0.208731001363619,
+  "steps": 294,
+  "infer_calls": 1,
+  "infer_ms": 337.48161299809,
+  "min_racket_ball_m": 0.049557602934400626,
+  "t_min": 3.039999999999776
+}

@@ -1,0 +1,21 @@
+{
+  "name": "vla_moon_e2e",
+  "world": "moon",
+  "seed": 100001,
+  "mode": "vla",
+  "latency": 0.0,
+  "start": 1.6,
+  "kind": "away",
+  "instruction": "hit the ball away from the opponent",
+  "zone": "deep-left",
+  "hit": 0,
+  "in_court": 0,
+  "in_zone": 0,
+  "net": 0,
+  "landing_error_m": null,
+  "steps": 218,
+  "infer_calls": 44,
+  "infer_ms": 354.9671850003671,
+  "min_racket_ball_m": 0.7475951440937737,
+  "t_min": 3.0999999999997696
+}

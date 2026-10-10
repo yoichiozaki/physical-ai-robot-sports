@@ -1,0 +1,10 @@
+# Smoke test of the evaluation pipeline (a few short matches).
+output: results/eval_quick
+points: 6
+workers: 2
+controllers:
+  - {name: "A: Naive", spec: naive}
+  - {name: "B*: Physics+Adapt", spec: physics_adaptive}
+opponents: [steady, aggressive]
+conditions: [nominal, unknown_court]
+seeds: [20000]

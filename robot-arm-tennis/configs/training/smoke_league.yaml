@@ -1,0 +1,20 @@
+# Smoke test of the self-play league machinery (a few hundred decisions).
+run_name: smoke_league
+seed: 0
+total_timesteps: 512
+n_envs: 2
+checkpoint_freq: 256
+init_from: checkpoints/ppo_hybrid/best_model.zip
+snapshot_every: 128
+ppo:
+  n_steps: 64
+  batch_size: 64
+  n_epochs: 2
+env:
+  mode: hybrid
+  points_per_episode: 2
+  in_bonus: 0.0
+  league_dir: /tmp/smoke_league/league
+  p_scripted: 0.2
+eval:
+  episodes: 0

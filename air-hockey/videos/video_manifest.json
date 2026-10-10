@@ -1,0 +1,232 @@
+{
+  "output": "videos/PAI最終課題_yoichiozaki.mp4",
+  "probe": {
+    "duration": 148.006,
+    "codec": "h264",
+    "width": 1280,
+    "height": 720,
+    "fps": "30/1",
+    "pix_fmt": "yuv420p"
+  },
+  "segments": [
+    {
+      "segment": "01_highlight",
+      "type": "simulation",
+      "home": "hybrid:checkpoints/ppo_hybrid_s0/final_model.zip",
+      "away": "aggressive",
+      "seed": 20000,
+      "condition": "nominal",
+      "game_time": [
+        18.72800000000846,
+        27.22800000000846
+      ],
+      "playback_speed": 1.0,
+      "seconds": 8.534
+    },
+    {
+      "segment": "02_problem",
+      "type": "card",
+      "seconds": 16,
+      "title": "課題と研究課題"
+    },
+    {
+      "segment": "03_architecture",
+      "type": "card",
+      "seconds": 11,
+      "title": "システム構成"
+    },
+    {
+      "segment": "04_robot",
+      "type": "simulation",
+      "home": "physics",
+      "away": "stationary",
+      "seed": 3,
+      "condition": "nominal",
+      "game_time": [
+        0.0,
+        2.6
+      ],
+      "playback_speed": 0.5,
+      "seconds": 5.234
+    },
+    {
+      "segment": "05_compare_0",
+      "type": "simulation",
+      "home": "reactive",
+      "away": "aggressive",
+      "seed": 30001,
+      "condition": "nominal",
+      "game_time": [
+        0.0,
+        10.0
+      ],
+      "playback_speed": 1.0,
+      "seconds": 10.034
+    },
+    {
+      "segment": "05_compare_1",
+      "type": "simulation",
+      "home": "physics",
+      "away": "aggressive",
+      "seed": 30001,
+      "condition": "nominal",
+      "game_time": [
+        0.0,
+        10.0
+      ],
+      "playback_speed": 1.0,
+      "seconds": 10.034
+    },
+    {
+      "segment": "05_compare_2",
+      "type": "simulation",
+      "home": "hybrid:checkpoints/ppo_hybrid_s0/final_model.zip",
+      "away": "aggressive",
+      "seed": 30001,
+      "condition": "nominal",
+      "game_time": [
+        0.0,
+        10.0
+      ],
+      "playback_speed": 1.0,
+      "seconds": 10.034
+    },
+    {
+      "segment": "06_bounce",
+      "type": "simulation",
+      "home": "physics",
+      "away": "stationary",
+      "seed": 30002,
+      "condition": "nominal",
+      "game_time": [
+        0.0,
+        1.6
+      ],
+      "playback_speed": 0.4,
+      "seconds": 4.034
+    },
+    {
+      "segment": "07_adapt_stationary",
+      "type": "simulation",
+      "home": "hybrid:checkpoints/ppo_hybrid_s0/final_model.zip",
+      "away": "stationary",
+      "seed": 30010,
+      "condition": "nominal",
+      "game_time": [
+        0.0,
+        9.0
+      ],
+      "playback_speed": 1.0,
+      "seconds": 9.034
+    },
+    {
+      "segment": "07_adapt_defensive",
+      "type": "simulation",
+      "home": "hybrid:checkpoints/ppo_hybrid_s0/final_model.zip",
+      "away": "defensive",
+      "seed": 30011,
+      "condition": "nominal",
+      "game_time": [
+        0.0,
+        9.0
+      ],
+      "playback_speed": 1.0,
+      "seconds": 9.034
+    },
+    {
+      "segment": "08_unknown",
+      "type": "simulation",
+      "home": "hybrid_adaptive:checkpoints/ppo_hybrid_s0/final_model.zip",
+      "away": "reactive",
+      "seed": 30020,
+      "condition": "unknown_sticky",
+      "game_time": [
+        0.0,
+        10.0
+      ],
+      "playback_speed": 1.0,
+      "seconds": 10.034
+    },
+    {
+      "segment": "09_results_table",
+      "type": "table",
+      "seconds": 10,
+      "title": "定量評価（標準条件, 相手 5 種 × 20 試合 × 60 秒）",
+      "rows": [
+        [
+          "A: Reactive",
+          "33%",
+          "2.76",
+          "3.38",
+          "53%"
+        ],
+        [
+          "B: Physics",
+          "80%",
+          "7.26",
+          "0.21",
+          "98%"
+        ],
+        [
+          "B+: Physics+Rule",
+          "91%",
+          "7.09",
+          "0.32",
+          "96%"
+        ],
+        [
+          "B*: Physics+Adapt",
+          "80%",
+          "7.29",
+          "0.24",
+          "98%"
+        ],
+        [
+          "C: PPO (pure RL)",
+          "97%",
+          "4.83",
+          "0.55",
+          "94%"
+        ],
+        [
+          "D: Hybrid AI",
+          "100%",
+          "9.20",
+          "0.38",
+          "95%"
+        ],
+        [
+          "D*: Hybrid AI+Adapt",
+          "100%",
+          "9.83",
+          "0.33",
+          "95%"
+        ]
+      ]
+    },
+    {
+      "segment": "10_win_rate",
+      "type": "card",
+      "seconds": 7,
+      "title": "勝率の比較"
+    },
+    {
+      "segment": "11_generalization",
+      "type": "card",
+      "seconds": 8,
+      "title": "未知条件への汎化"
+    },
+    {
+      "segment": "12_strategy",
+      "type": "card",
+      "seconds": 6,
+      "title": "相手ごとの戦略選択"
+    },
+    {
+      "segment": "13_conclusion",
+      "type": "card",
+      "seconds": 14,
+      "title": "結論と今後の課題"
+    }
+  ]
+}

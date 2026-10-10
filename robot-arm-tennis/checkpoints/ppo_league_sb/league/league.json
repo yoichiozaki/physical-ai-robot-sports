@@ -1,0 +1,87 @@
+{
+  "snapshots": [
+    {
+      "name": "gen_000",
+      "path": "checkpoints/ppo_league_sb/league/gen_000.zip",
+      "timesteps": 0,
+      "points_won": 3565,
+      "points": 5836,
+      "games": 1459
+    },
+    {
+      "name": "gen_001",
+      "path": "checkpoints/ppo_league_sb/league/gen_001.zip",
+      "timesteps": 12000,
+      "points_won": 2627,
+      "points": 5072,
+      "games": 1268
+    },
+    {
+      "name": "gen_002",
+      "path": "checkpoints/ppo_league_sb/league/gen_002.zip",
+      "timesteps": 24000,
+      "points_won": 2065,
+      "points": 4312,
+      "games": 1078
+    },
+    {
+      "name": "gen_003",
+      "path": "checkpoints/ppo_league_sb/league/gen_003.zip",
+      "timesteps": 36000,
+      "points_won": 1853,
+      "points": 3816,
+      "games": 954
+    },
+    {
+      "name": "gen_004",
+      "path": "checkpoints/ppo_league_sb/league/gen_004.zip",
+      "timesteps": 48000,
+      "points_won": 1426,
+      "points": 2944,
+      "games": 736
+    },
+    {
+      "name": "gen_005",
+      "path": "checkpoints/ppo_league_sb/league/gen_005.zip",
+      "timesteps": 60000,
+      "points_won": 1127,
+      "points": 2312,
+      "games": 578
+    },
+    {
+      "name": "gen_006",
+      "path": "checkpoints/ppo_league_sb/league/gen_006.zip",
+      "timesteps": 72000,
+      "points_won": 142,
+      "points": 300,
+      "games": 75
+    }
+  ],
+  "scripted": {
+    "lob": {
+      "points_won": 1173,
+      "points": 1280,
+      "games": 320
+    },
+    "aggressive": {
+      "points_won": 828,
+      "points": 1192,
+      "games": 298
+    },
+    "slow": {
+      "points_won": 1145,
+      "points": 1236,
+      "games": 309
+    },
+    "steady": {
+      "points_won": 1032,
+      "points": 1132,
+      "games": 283
+    },
+    "random": {
+      "points_won": 1100,
+      "points": 1260,
+      "games": 315
+    }
+  }
+}

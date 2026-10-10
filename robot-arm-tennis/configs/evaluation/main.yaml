@@ -1,0 +1,20 @@
+# Main evaluation (Phase 8): all controllers on the same grid. Seeds 20000+ are evaluation-only
+# (training draws its own seeds). "unknown_*" conditions are never used for RL training or for
+# the residual model; their ball-machine drills were looked at while developing the online
+# identification (see EXPERIMENTS.md), the match seeds below were not. The same
+# (opponent, condition, seed) gives every controller the same initial conditions and physics
+# parameters -> paired comparisons.
+output: results/eval_main
+points: 20
+workers: 0
+controllers:
+  - {name: "A: Naive", spec: naive}
+  - {name: "B: Physics", spec: physics}
+  - {name: "B+: Physics+Rule", spec: physics_rule}
+  - {name: "B*: Physics+Adapt", spec: physics_adaptive}
+  - {name: "C: PPO direct", spec: "direct:checkpoints/ppo_direct/best_model.zip"}
+  - {name: "D-: Hybrid w/o adapt", spec: "hybrid_static:checkpoints/ppo_hybrid/best_model.zip"}
+  - {name: "D: Hybrid AI", spec: "hybrid:checkpoints/ppo_hybrid/best_model.zip"}
+opponents: [steady, random, aggressive, lob, slow]
+conditions: [nominal, randomized, unknown_wind, unknown_court]
+seeds: [20000, 20001, 20002, 20003, 20004, 20005, 20006, 20007, 20008, 20009, 20010, 20011]

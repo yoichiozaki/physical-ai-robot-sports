@@ -1,0 +1,7 @@
+{
+  "mean_s": 0.3477935263998734,
+  "p95_s": 0.3591521690497757,
+  "n": 100,
+  "device": "NVIDIA A100-SXM4-40GB",
+  "simulated_real_latency_s": 0.36
+}

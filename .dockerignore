@@ -1,0 +1,4 @@
+# Only the pinned requirements are needed to build the Dev Container image.
+*
+!requirements
+!requirements/**

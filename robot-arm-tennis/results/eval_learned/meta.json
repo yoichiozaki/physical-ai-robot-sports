@@ -1,0 +1,53 @@
+{
+  "config": {
+    "output": "results/eval_learned",
+    "controllers": [
+      {
+        "name": "C: PPO direct",
+        "spec": "direct:checkpoints/ppo_direct/best_model.zip"
+      },
+      {
+        "name": "D: Hybrid AI",
+        "spec": "hybrid:checkpoints/ppo_hybrid/best_model.zip"
+      },
+      {
+        "name": "D-: Hybrid w/o adapt",
+        "spec": "hybrid_static:checkpoints/ppo_hybrid/best_model.zip"
+      }
+    ],
+    "opponents": [
+      "steady",
+      "random",
+      "aggressive",
+      "lob",
+      "slow"
+    ],
+    "conditions": [
+      "nominal",
+      "randomized",
+      "unknown_wind",
+      "unknown_court"
+    ],
+    "seeds": [
+      20000,
+      20001,
+      20002,
+      20003,
+      20004,
+      20005,
+      20006,
+      20007,
+      20008,
+      20009,
+      20010,
+      20011
+    ],
+    "points": 20,
+    "workers": 20,
+    "notes": {}
+  },
+  "matches": 720,
+  "wall_time_s": 2094.1,
+  "workers": 20,
+  "generated_at": "2026-10-09T12:03:18+0000"
+}

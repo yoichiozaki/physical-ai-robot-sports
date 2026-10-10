@@ -1,0 +1,122 @@
+{
+  "nominal": {
+    "physics": {
+      "hits": 384,
+      "landing_error_mean_m": 0.26781856864706166,
+      "landing_error_median_m": 0.21107761510448692,
+      "in_court_rate": 0.9635416666666666,
+      "net_rate": 0.0
+    },
+    "physics+residual": {
+      "hits": 384,
+      "landing_error_mean_m": 0.16875261576939257,
+      "landing_error_median_m": 0.10008512497778421,
+      "in_court_rate": 0.9739583333333334,
+      "net_rate": 0.0
+    },
+    "physics+online-id": {
+      "hits": 382,
+      "landing_error_mean_m": 0.2818235263497768,
+      "landing_error_median_m": 0.2171243622911016,
+      "in_court_rate": 0.9502617801047121,
+      "net_rate": 0.002617801047120419
+    },
+    "physics+residual+online-id": {
+      "hits": 382,
+      "landing_error_mean_m": 0.21402585785155007,
+      "landing_error_median_m": 0.14227182778094227,
+      "in_court_rate": 0.9607329842931938,
+      "net_rate": 0.002617801047120419
+    }
+  },
+  "randomized": {
+    "physics": {
+      "hits": 347,
+      "landing_error_mean_m": 0.400735942304813,
+      "landing_error_median_m": 0.3365592978299248,
+      "in_court_rate": 0.8731988472622478,
+      "net_rate": 0.008645533141210375
+    },
+    "physics+residual": {
+      "hits": 325,
+      "landing_error_mean_m": 0.40926588030226596,
+      "landing_error_median_m": 0.3085767432554101,
+      "in_court_rate": 0.8830769230769231,
+      "net_rate": 0.003076923076923077
+    },
+    "physics+online-id": {
+      "hits": 363,
+      "landing_error_mean_m": 0.4199751492482568,
+      "landing_error_median_m": 0.3642474644374483,
+      "in_court_rate": 0.8842975206611571,
+      "net_rate": 0.005509641873278237
+    },
+    "physics+residual+online-id": {
+      "hits": 354,
+      "landing_error_mean_m": 0.383917399498371,
+      "landing_error_median_m": 0.3107282215890342,
+      "in_court_rate": 0.9180790960451978,
+      "net_rate": 0.00847457627118644
+    }
+  },
+  "unknown_wind": {
+    "physics": {
+      "hits": 131,
+      "landing_error_mean_m": 0.590905147589545,
+      "landing_error_median_m": 0.5428433577591363,
+      "in_court_rate": 0.8549618320610687,
+      "net_rate": 0.015267175572519083
+    },
+    "physics+residual": {
+      "hits": 132,
+      "landing_error_mean_m": 0.5317479525019331,
+      "landing_error_median_m": 0.45035260252261067,
+      "in_court_rate": 0.8333333333333334,
+      "net_rate": 0.022727272727272728
+    },
+    "physics+online-id": {
+      "hits": 114,
+      "landing_error_mean_m": 0.42512828770162026,
+      "landing_error_median_m": 0.3270437276973584,
+      "in_court_rate": 0.8421052631578947,
+      "net_rate": 0.017543859649122806
+    },
+    "physics+residual+online-id": {
+      "hits": 119,
+      "landing_error_mean_m": 0.4302154533095076,
+      "landing_error_median_m": 0.32713598941237293,
+      "in_court_rate": 0.8487394957983193,
+      "net_rate": 0.01680672268907563
+    }
+  },
+  "unknown_court": {
+    "physics": {
+      "hits": 72,
+      "landing_error_mean_m": 0.7485246072379732,
+      "landing_error_median_m": 0.7461601171463702,
+      "in_court_rate": 0.3611111111111111,
+      "net_rate": 0.041666666666666664
+    },
+    "physics+residual": {
+      "hits": 67,
+      "landing_error_mean_m": 0.7521388247130082,
+      "landing_error_median_m": 0.6556078521533746,
+      "in_court_rate": 0.40298507462686567,
+      "net_rate": 0.0
+    },
+    "physics+online-id": {
+      "hits": 421,
+      "landing_error_mean_m": 0.5659631588083177,
+      "landing_error_median_m": 0.505622370483537,
+      "in_court_rate": 0.7482185273159145,
+      "net_rate": 0.011876484560570071
+    },
+    "physics+residual+online-id": {
+      "hits": 415,
+      "landing_error_mean_m": 0.5513905261586929,
+      "landing_error_median_m": 0.47487803285497154,
+      "in_court_rate": 0.7518072289156627,
+      "net_rate": 0.004819277108433735
+    }
+  }
+}

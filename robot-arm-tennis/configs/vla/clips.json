@@ -1,0 +1,6 @@
+[
+  {"name": "vla_moon_e2e", "world": "moon", "seed": 100001, "mode": "vla", "latency": 0.0, "start": 1.6},
+  {"name": "vla_earth_hier", "world": "earth", "seed": 100001, "mode": "hier", "latency": 0.36, "start": 0.3},
+  {"name": "vla_earth_hier_late", "world": "earth", "seed": 100001, "mode": "hier", "latency": 1.4, "start": 0.3},
+  {"name": "vla_moon_hier_late", "world": "moon", "seed": 100001, "mode": "hier", "latency": 1.4, "start": 1.6}
+]

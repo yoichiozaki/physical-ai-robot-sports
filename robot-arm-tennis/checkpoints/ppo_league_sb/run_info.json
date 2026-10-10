@@ -1,0 +1,89 @@
+{
+  "run_name": "ppo_league_sb",
+  "algorithm": "PPO",
+  "policy": "MlpPolicy",
+  "seed": 4,
+  "total_timesteps": 73728,
+  "timestep_unit": "decision (one per shot of the home robot)",
+  "training_duration_s": 4838.7,
+  "sessions": [
+    {
+      "resumed_from": null,
+      "steps_this_session": 72000,
+      "duration_s": 4838.7,
+      "steps_per_s": 14.9,
+      "finished_at": "2026-10-09T19:24:27+0000"
+    }
+  ],
+  "n_envs": 16,
+  "cpu_count": 20,
+  "git_commit": "6baeedd-dirty",
+  "versions": {
+    "python": "3.11.17",
+    "tennis": "0.1.0",
+    "env_version": "tennis-env-v1",
+    "mujoco": "3.15.0",
+    "gymnasium": "1.4.0",
+    "stable_baselines3": "2.9.0",
+    "torch": "2.14.1+cpu",
+    "numpy": "2.4.6"
+  },
+  "checkpoint": "checkpoints/ppo_league_sb/final_model.zip",
+  "config": {
+    "run_name": "ppo_league_sb",
+    "seed": 4,
+    "total_timesteps": 72000,
+    "n_envs": 16,
+    "torch_threads": 1,
+    "device": "cpu",
+    "checkpoint_freq": 12000,
+    "ppo": {
+      "n_steps": 128,
+      "batch_size": 256,
+      "n_epochs": 10,
+      "learning_rate": 0.0002,
+      "gamma": 0.97,
+      "gae_lambda": 0.95,
+      "ent_coef": 0.005,
+      "clip_range": 0.2,
+      "policy_kwargs": {
+        "net_arch": [
+          64,
+          64
+        ]
+      }
+    },
+    "env": {
+      "mode": "hybrid",
+      "opponents": [
+        "steady",
+        "random",
+        "aggressive",
+        "lob",
+        "slow"
+      ],
+      "conditions": [
+        "nominal",
+        "randomized"
+      ],
+      "points_per_episode": 4,
+      "in_bonus": 0.0,
+      "max_decisions": 80,
+      "adaptive": true,
+      "residual": "checkpoints/residual/model.pt",
+      "league_dir": "checkpoints/ppo_league_sb/league",
+      "p_scripted": 0.2,
+      "p_latest": 0.4,
+      "pfsp_power": 2.0,
+      "service_line": 1.62
+    },
+    "eval": {
+      "freq": 20000,
+      "episodes": 0,
+      "seed": 100000
+    },
+    "init_from": "checkpoints/ppo_hybrid_sb/best_model.zip",
+    "snapshot_every": 12000,
+    "league_seed": null
+  }
+}

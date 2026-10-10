@@ -1,0 +1,965 @@
+{
+  "by_controller": [
+    {
+      "controller": "A: Reactive",
+      "nominal": {
+        "win": 0.33,
+        "points": 0.4,
+        "goals_for": 2.76,
+        "goals_against": 3.38,
+        "goal_diff": -0.62,
+        "defense_success": 0.5260869565217391,
+        "prediction_error_m": NaN,
+        "latency_ms": 0.006202737643079823,
+        "matches": 100
+      },
+      "randomized": {
+        "win": 0.32,
+        "points": 0.425,
+        "goals_for": 2.63,
+        "goals_against": 3.26,
+        "goal_diff": -0.63,
+        "defense_success": 0.5357664233576642,
+        "prediction_error_m": NaN,
+        "latency_ms": 0.006796324922538721,
+        "matches": 100
+      },
+      "unknown_sticky": {
+        "win": 0.52,
+        "points": 0.59,
+        "goals_for": 1.89,
+        "goals_against": 1.4,
+        "goal_diff": 0.49,
+        "defense_success": 0.7349896480331263,
+        "prediction_error_m": NaN,
+        "latency_ms": 0.007025516428279707,
+        "matches": 100
+      },
+      "unknown_bouncy": {
+        "win": 0.25,
+        "points": 0.34,
+        "goals_for": 4.66,
+        "goals_against": 6.61,
+        "goal_diff": -1.95,
+        "defense_success": 0.3612204724409449,
+        "prediction_error_m": NaN,
+        "latency_ms": 0.007750691861688932,
+        "matches": 100
+      }
+    },
+    {
+      "controller": "B: Physics",
+      "nominal": {
+        "win": 0.8,
+        "points": 0.9,
+        "goals_for": 7.26,
+        "goals_against": 0.21,
+        "goal_diff": 7.05,
+        "defense_success": 0.9836829836829837,
+        "prediction_error_m": 0.02350859050983288,
+        "latency_ms": 0.09171279678259175,
+        "matches": 100
+      },
+      "randomized": {
+        "win": 0.91,
+        "points": 0.945,
+        "goals_for": 5.67,
+        "goals_against": 0.27,
+        "goal_diff": 5.4,
+        "defense_success": 0.9681528662420382,
+        "prediction_error_m": 0.04475678528792628,
+        "latency_ms": 0.09231009139871418,
+        "matches": 100
+      },
+      "unknown_sticky": {
+        "win": 0.71,
+        "points": 0.84,
+        "goals_for": 2.38,
+        "goals_against": 0.15,
+        "goal_diff": 2.23,
+        "defense_success": 0.9682203389830508,
+        "prediction_error_m": 0.08748806883331936,
+        "latency_ms": 0.09321404081711196,
+        "matches": 100
+      },
+      "unknown_bouncy": {
+        "win": 0.79,
+        "points": 0.825,
+        "goals_for": 4.8,
+        "goals_against": 1.45,
+        "goal_diff": 3.35,
+        "defense_success": 0.8589211618257261,
+        "prediction_error_m": 0.11913693085531542,
+        "latency_ms": 0.11860727882029602,
+        "matches": 100
+      }
+    },
+    {
+      "controller": "B+: Physics+Rule",
+      "nominal": {
+        "win": 0.91,
+        "points": 0.955,
+        "goals_for": 7.09,
+        "goals_against": 0.32,
+        "goal_diff": 6.77,
+        "defense_success": 0.957325746799431,
+        "prediction_error_m": 0.026693035875089283,
+        "latency_ms": 0.10231935894555805,
+        "matches": 100
+      },
+      "randomized": {
+        "win": 0.86,
+        "points": 0.92,
+        "goals_for": 4.97,
+        "goals_against": 0.21,
+        "goal_diff": 4.76,
+        "defense_success": 0.9674922600619195,
+        "prediction_error_m": 0.042126268838305884,
+        "latency_ms": 0.10351664869172039,
+        "matches": 100
+      },
+      "unknown_sticky": {
+        "win": 0.63,
+        "points": 0.785,
+        "goals_for": 2.08,
+        "goals_against": 0.23,
+        "goal_diff": 1.85,
+        "defense_success": 0.951271186440678,
+        "prediction_error_m": 0.08707729682695325,
+        "latency_ms": 0.11109153786226011,
+        "matches": 100
+      },
+      "unknown_bouncy": {
+        "win": 0.75,
+        "points": 0.805,
+        "goals_for": 4.6,
+        "goals_against": 1.52,
+        "goal_diff": 3.08,
+        "defense_success": 0.8397291196388262,
+        "prediction_error_m": 0.1058126486433785,
+        "latency_ms": 0.13081524422731,
+        "matches": 100
+      }
+    },
+    {
+      "controller": "B*: Physics+Adapt",
+      "nominal": {
+        "win": 0.8,
+        "points": 0.9,
+        "goals_for": 7.29,
+        "goals_against": 0.24,
+        "goal_diff": 7.05,
+        "defense_success": 0.9815100154083205,
+        "prediction_error_m": 0.025894617287223688,
+        "latency_ms": 0.09721843438498602,
+        "matches": 100
+      },
+      "randomized": {
+        "win": 0.95,
+        "points": 0.975,
+        "goals_for": 5.85,
+        "goals_against": 0.19,
+        "goal_diff": 5.66,
+        "defense_success": 0.976,
+        "prediction_error_m": 0.03288863870995791,
+        "latency_ms": 0.1043179547135042,
+        "matches": 100
+      },
+      "unknown_sticky": {
+        "win": 0.7,
+        "points": 0.835,
+        "goals_for": 2.58,
+        "goals_against": 0.2,
+        "goal_diff": 2.38,
+        "defense_success": 0.9616204690831557,
+        "prediction_error_m": 0.055943924629584085,
+        "latency_ms": 0.10616743164927314,
+        "matches": 100
+      },
+      "unknown_bouncy": {
+        "win": 0.84,
+        "points": 0.885,
+        "goals_for": 4.9,
+        "goals_against": 1.09,
+        "goal_diff": 3.81,
+        "defense_success": 0.8893617021276595,
+        "prediction_error_m": 0.0761699884610258,
+        "latency_ms": 0.13470585369666951,
+        "matches": 100
+      }
+    },
+    {
+      "controller": "C: PPO (pure RL)",
+      "nominal": {
+        "win": 0.97,
+        "points": 0.985,
+        "goals_for": 4.83,
+        "goals_against": 0.55,
+        "goal_diff": 4.28,
+        "defense_success": 0.9369158878504673,
+        "prediction_error_m": NaN,
+        "latency_ms": 0.2072550140756659,
+        "matches": 100
+      },
+      "randomized": {
+        "win": 0.97,
+        "points": 0.98,
+        "goals_for": 5.24,
+        "goals_against": 0.4,
+        "goal_diff": 4.84,
+        "defense_success": 0.95,
+        "prediction_error_m": NaN,
+        "latency_ms": 0.20881911832600192,
+        "matches": 100
+      },
+      "unknown_sticky": {
+        "win": 0.79,
+        "points": 0.89,
+        "goals_for": 2.65,
+        "goals_against": 0.07,
+        "goal_diff": 2.58,
+        "defense_success": 0.987152034261242,
+        "prediction_error_m": NaN,
+        "latency_ms": 0.20853297852380873,
+        "matches": 100
+      },
+      "unknown_bouncy": {
+        "win": 0.84,
+        "points": 0.86,
+        "goals_for": 5.58,
+        "goals_against": 2.34,
+        "goal_diff": 3.24,
+        "defense_success": 0.786046511627907,
+        "prediction_error_m": NaN,
+        "latency_ms": 0.20739024760488545,
+        "matches": 100
+      }
+    },
+    {
+      "controller": "D: Hybrid AI",
+      "nominal": {
+        "win": 1.0,
+        "points": 1.0,
+        "goals_for": 9.2,
+        "goals_against": 0.38,
+        "goal_diff": 8.82,
+        "defense_success": 0.9525179856115108,
+        "prediction_error_m": 0.023560086980261616,
+        "latency_ms": 0.14857639846051293,
+        "matches": 100
+      },
+      "randomized": {
+        "win": 1.0,
+        "points": 1.0,
+        "goals_for": 7.03,
+        "goals_against": 0.41,
+        "goal_diff": 6.62,
+        "defense_success": 0.9388714733542319,
+        "prediction_error_m": 0.04773977123904199,
+        "latency_ms": 0.1564516838736914,
+        "matches": 100
+      },
+      "unknown_sticky": {
+        "win": 0.7,
+        "points": 0.815,
+        "goals_for": 2.74,
+        "goals_against": 0.32,
+        "goal_diff": 2.42,
+        "defense_success": 0.9330024813895782,
+        "prediction_error_m": 0.0926008800293498,
+        "latency_ms": 0.1704970545091637,
+        "matches": 100
+      },
+      "unknown_bouncy": {
+        "win": 0.78,
+        "points": 0.825,
+        "goals_for": 4.88,
+        "goals_against": 1.23,
+        "goal_diff": 3.65,
+        "defense_success": 0.8734873487348734,
+        "prediction_error_m": 0.11752976858279135,
+        "latency_ms": 0.19921781937795774,
+        "matches": 100
+      }
+    },
+    {
+      "controller": "D*: Hybrid AI+Adapt",
+      "nominal": {
+        "win": 1.0,
+        "points": 1.0,
+        "goals_for": 9.83,
+        "goals_against": 0.33,
+        "goal_diff": 9.5,
+        "defense_success": 0.9541666666666667,
+        "prediction_error_m": 0.02826849782857612,
+        "latency_ms": 0.16704259986218253,
+        "matches": 100
+      },
+      "randomized": {
+        "win": 0.98,
+        "points": 0.99,
+        "goals_for": 7.79,
+        "goals_against": 0.4,
+        "goal_diff": 7.39,
+        "defense_success": 0.9462989840348331,
+        "prediction_error_m": 0.03520994810910705,
+        "latency_ms": 0.17180802419927674,
+        "matches": 100
+      },
+      "unknown_sticky": {
+        "win": 0.82,
+        "points": 0.9,
+        "goals_for": 3.06,
+        "goals_against": 0.14,
+        "goal_diff": 2.92,
+        "defense_success": 0.9642857142857143,
+        "prediction_error_m": 0.04242282101334204,
+        "latency_ms": 0.18862463523186482,
+        "matches": 100
+      },
+      "unknown_bouncy": {
+        "win": 0.82,
+        "points": 0.875,
+        "goals_for": 5.24,
+        "goals_against": 1.12,
+        "goal_diff": 4.12,
+        "defense_success": 0.8885316184351554,
+        "prediction_error_m": 0.06875574432935408,
+        "latency_ms": 0.21878874710116797,
+        "matches": 100
+      }
+    }
+  ],
+  "paired_differences": {
+    "D-B:goal_diff:all": {
+      "diff": 0.87,
+      "lo": 0.5674375,
+      "hi": 1.18,
+      "n": 400
+    },
+    "D-B:goal_diff:nominal": {
+      "diff": 1.77,
+      "lo": 0.98,
+      "hi": 2.54,
+      "n": 100
+    },
+    "D-B:goal_diff:randomized": {
+      "diff": 1.22,
+      "lo": 0.63,
+      "hi": 1.79,
+      "n": 100
+    },
+    "D-B:goal_diff:unknown_sticky": {
+      "diff": 0.19,
+      "lo": -0.29,
+      "hi": 0.66,
+      "n": 100
+    },
+    "D-B:goal_diff:unknown_bouncy": {
+      "diff": 0.3,
+      "lo": -0.24,
+      "hi": 0.82,
+      "n": 100
+    },
+    "D-B:goals_for:all": {
+      "diff": 0.935,
+      "lo": 0.6475,
+      "hi": 1.2325,
+      "n": 400
+    },
+    "D-B:goals_for:nominal": {
+      "diff": 1.94,
+      "lo": 1.18,
+      "hi": 2.680250000000001,
+      "n": 100
+    },
+    "D-B:goals_for:randomized": {
+      "diff": 1.36,
+      "lo": 0.7697500000000002,
+      "hi": 1.92,
+      "n": 100
+    },
+    "D-B:goals_for:unknown_sticky": {
+      "diff": 0.36,
+      "lo": -0.12,
+      "hi": 0.81,
+      "n": 100
+    },
+    "D-B:goals_for:unknown_bouncy": {
+      "diff": 0.08,
+      "lo": -0.35,
+      "hi": 0.52,
+      "n": 100
+    },
+    "D-B:points:all": {
+      "diff": 0.0325,
+      "lo": 0.00125,
+      "hi": 0.06375,
+      "n": 400
+    },
+    "D-B:points:nominal": {
+      "diff": 0.1,
+      "lo": 0.065,
+      "hi": 0.14,
+      "n": 100
+    },
+    "D-B:points:randomized": {
+      "diff": 0.055,
+      "lo": 0.02,
+      "hi": 0.09,
+      "n": 100
+    },
+    "D-B:points:unknown_sticky": {
+      "diff": -0.025,
+      "lo": -0.095,
+      "hi": 0.04,
+      "n": 100
+    },
+    "D-B:points:unknown_bouncy": {
+      "diff": 0.0,
+      "lo": -0.085,
+      "hi": 0.085,
+      "n": 100
+    },
+    "D-B+:goal_diff:all": {
+      "diff": 1.2625,
+      "lo": 0.95,
+      "hi": 1.5675,
+      "n": 400
+    },
+    "D-B+:goal_diff:nominal": {
+      "diff": 2.05,
+      "lo": 1.40975,
+      "hi": 2.7,
+      "n": 100
+    },
+    "D-B+:goal_diff:randomized": {
+      "diff": 1.86,
+      "lo": 1.2,
+      "hi": 2.5,
+      "n": 100
+    },
+    "D-B+:goal_diff:unknown_sticky": {
+      "diff": 0.57,
+      "lo": 0.1,
+      "hi": 1.05,
+      "n": 100
+    },
+    "D-B+:goal_diff:unknown_bouncy": {
+      "diff": 0.57,
+      "lo": -0.01,
+      "hi": 1.19,
+      "n": 100
+    },
+    "D-B+:goals_for:all": {
+      "diff": 1.2775,
+      "lo": 0.9925,
+      "hi": 1.555,
+      "n": 400
+    },
+    "D-B+:goals_for:nominal": {
+      "diff": 2.11,
+      "lo": 1.48,
+      "hi": 2.73,
+      "n": 100
+    },
+    "D-B+:goals_for:randomized": {
+      "diff": 2.06,
+      "lo": 1.43,
+      "hi": 2.65,
+      "n": 100
+    },
+    "D-B+:goals_for:unknown_sticky": {
+      "diff": 0.66,
+      "lo": 0.19,
+      "hi": 1.11,
+      "n": 100
+    },
+    "D-B+:goals_for:unknown_bouncy": {
+      "diff": 0.28,
+      "lo": -0.19024999999999992,
+      "hi": 0.75,
+      "n": 100
+    },
+    "D-B+:points:all": {
+      "diff": 0.04375,
+      "lo": 0.01375,
+      "hi": 0.07375,
+      "n": 400
+    },
+    "D-B+:points:nominal": {
+      "diff": 0.045,
+      "lo": 0.02,
+      "hi": 0.075,
+      "n": 100
+    },
+    "D-B+:points:randomized": {
+      "diff": 0.08,
+      "lo": 0.04,
+      "hi": 0.125,
+      "n": 100
+    },
+    "D-B+:points:unknown_sticky": {
+      "diff": 0.03,
+      "lo": -0.04,
+      "hi": 0.095,
+      "n": 100
+    },
+    "D-B+:points:unknown_bouncy": {
+      "diff": 0.02,
+      "lo": -0.065,
+      "hi": 0.105,
+      "n": 100
+    },
+    "C-B:goal_diff:all": {
+      "diff": -0.7725,
+      "lo": -1.1325625000000001,
+      "hi": -0.4024374999999998,
+      "n": 400
+    },
+    "C-B:goal_diff:nominal": {
+      "diff": -2.77,
+      "lo": -3.6502499999999998,
+      "hi": -1.89,
+      "n": 100
+    },
+    "C-B:goal_diff:randomized": {
+      "diff": -0.56,
+      "lo": -1.2402499999999999,
+      "hi": 0.06,
+      "n": 100
+    },
+    "C-B:goal_diff:unknown_sticky": {
+      "diff": 0.35,
+      "lo": -0.17,
+      "hi": 0.85,
+      "n": 100
+    },
+    "C-B:goal_diff:unknown_bouncy": {
+      "diff": -0.11,
+      "lo": -0.77,
+      "hi": 0.59,
+      "n": 100
+    },
+    "C-B:goals_for:all": {
+      "diff": -0.4525,
+      "lo": -0.8000625,
+      "hi": -0.1,
+      "n": 400
+    },
+    "C-B:goals_for:nominal": {
+      "diff": -2.43,
+      "lo": -3.27025,
+      "hi": -1.6097499999999991,
+      "n": 100
+    },
+    "C-B:goals_for:randomized": {
+      "diff": -0.43,
+      "lo": -1.11,
+      "hi": 0.2,
+      "n": 100
+    },
+    "C-B:goals_for:unknown_sticky": {
+      "diff": 0.27,
+      "lo": -0.23,
+      "hi": 0.75,
+      "n": 100
+    },
+    "C-B:goals_for:unknown_bouncy": {
+      "diff": 0.78,
+      "lo": 0.22,
+      "hi": 1.36,
+      "n": 100
+    },
+    "C-B:points:all": {
+      "diff": 0.05125,
+      "lo": 0.0225,
+      "hi": 0.08125,
+      "n": 400
+    },
+    "C-B:points:nominal": {
+      "diff": 0.085,
+      "lo": 0.05,
+      "hi": 0.125,
+      "n": 100
+    },
+    "C-B:points:randomized": {
+      "diff": 0.035,
+      "lo": -0.01,
+      "hi": 0.075,
+      "n": 100
+    },
+    "C-B:points:unknown_sticky": {
+      "diff": 0.05,
+      "lo": -0.005,
+      "hi": 0.11,
+      "n": 100
+    },
+    "C-B:points:unknown_bouncy": {
+      "diff": 0.035,
+      "lo": -0.045,
+      "hi": 0.12,
+      "n": 100
+    },
+    "D*-D:goal_diff:all": {
+      "diff": 0.605,
+      "lo": 0.34,
+      "hi": 0.875,
+      "n": 400
+    },
+    "D*-D:goal_diff:nominal": {
+      "diff": 0.68,
+      "lo": 0.15,
+      "hi": 1.23,
+      "n": 100
+    },
+    "D*-D:goal_diff:randomized": {
+      "diff": 0.77,
+      "lo": 0.18,
+      "hi": 1.38,
+      "n": 100
+    },
+    "D*-D:goal_diff:unknown_sticky": {
+      "diff": 0.5,
+      "lo": 0.12,
+      "hi": 0.89,
+      "n": 100
+    },
+    "D*-D:goal_diff:unknown_bouncy": {
+      "diff": 0.47,
+      "lo": -0.11,
+      "hi": 1.1,
+      "n": 100
+    },
+    "D*-D:goals_for:all": {
+      "diff": 0.5175,
+      "lo": 0.26493750000000005,
+      "hi": 0.775,
+      "n": 400
+    },
+    "D*-D:goals_for:nominal": {
+      "diff": 0.63,
+      "lo": 0.09,
+      "hi": 1.19,
+      "n": 100
+    },
+    "D*-D:goals_for:randomized": {
+      "diff": 0.76,
+      "lo": 0.15,
+      "hi": 1.37,
+      "n": 100
+    },
+    "D*-D:goals_for:unknown_sticky": {
+      "diff": 0.32,
+      "lo": -0.04,
+      "hi": 0.69,
+      "n": 100
+    },
+    "D*-D:goals_for:unknown_bouncy": {
+      "diff": 0.36,
+      "lo": -0.15,
+      "hi": 0.89,
+      "n": 100
+    },
+    "D*-D:points:all": {
+      "diff": 0.03125,
+      "lo": 0.00875,
+      "hi": 0.05375,
+      "n": 400
+    },
+    "D*-D:points:nominal": {
+      "diff": 0.0,
+      "lo": 0.0,
+      "hi": 0.0,
+      "n": 100
+    },
+    "D*-D:points:randomized": {
+      "diff": -0.01,
+      "lo": -0.025,
+      "hi": 0.0,
+      "n": 100
+    },
+    "D*-D:points:unknown_sticky": {
+      "diff": 0.085,
+      "lo": 0.035,
+      "hi": 0.135,
+      "n": 100
+    },
+    "D*-D:points:unknown_bouncy": {
+      "diff": 0.05,
+      "lo": -0.02,
+      "hi": 0.12,
+      "n": 100
+    },
+    "B*-B:goal_diff:all": {
+      "diff": 0.2175,
+      "lo": -0.0325,
+      "hi": 0.4700625000000002,
+      "n": 400
+    },
+    "B*-B:goal_diff:nominal": {
+      "diff": 0.0,
+      "lo": -0.55,
+      "hi": 0.58,
+      "n": 100
+    },
+    "B*-B:goal_diff:randomized": {
+      "diff": 0.26,
+      "lo": -0.21,
+      "hi": 0.77,
+      "n": 100
+    },
+    "B*-B:goal_diff:unknown_sticky": {
+      "diff": 0.15,
+      "lo": -0.17,
+      "hi": 0.47,
+      "n": 100
+    },
+    "B*-B:goal_diff:unknown_bouncy": {
+      "diff": 0.46,
+      "lo": -0.1,
+      "hi": 1.05,
+      "n": 100
+    },
+    "B*-B:goals_for:all": {
+      "diff": 0.1275,
+      "lo": -0.1025,
+      "hi": 0.36,
+      "n": 400
+    },
+    "B*-B:goals_for:nominal": {
+      "diff": 0.03,
+      "lo": -0.48,
+      "hi": 0.55,
+      "n": 100
+    },
+    "B*-B:goals_for:randomized": {
+      "diff": 0.18,
+      "lo": -0.3,
+      "hi": 0.67,
+      "n": 100
+    },
+    "B*-B:goals_for:unknown_sticky": {
+      "diff": 0.2,
+      "lo": -0.11,
+      "hi": 0.51,
+      "n": 100
+    },
+    "B*-B:goals_for:unknown_bouncy": {
+      "diff": 0.1,
+      "lo": -0.35,
+      "hi": 0.59,
+      "n": 100
+    },
+    "B*-B:points:all": {
+      "diff": 0.02125,
+      "lo": -0.0012812499999999894,
+      "hi": 0.04375,
+      "n": 400
+    },
+    "B*-B:points:nominal": {
+      "diff": 0.0,
+      "lo": 0.0,
+      "hi": 0.0,
+      "n": 100
+    },
+    "B*-B:points:randomized": {
+      "diff": 0.03,
+      "lo": -0.005,
+      "hi": 0.065,
+      "n": 100
+    },
+    "B*-B:points:unknown_sticky": {
+      "diff": -0.005,
+      "lo": -0.05,
+      "hi": 0.045,
+      "n": 100
+    },
+    "B*-B:points:unknown_bouncy": {
+      "diff": 0.06,
+      "lo": -0.005,
+      "hi": 0.13,
+      "n": 100
+    },
+    "B-A:goal_diff:all": {
+      "diff": 5.185,
+      "lo": 4.74,
+      "hi": 5.62,
+      "n": 400
+    },
+    "B-A:goal_diff:nominal": {
+      "diff": 7.67,
+      "lo": 6.66,
+      "hi": 8.69,
+      "n": 100
+    },
+    "B-A:goal_diff:randomized": {
+      "diff": 6.03,
+      "lo": 5.27,
+      "hi": 6.8,
+      "n": 100
+    },
+    "B-A:goal_diff:unknown_sticky": {
+      "diff": 1.74,
+      "lo": 1.24,
+      "hi": 2.27,
+      "n": 100
+    },
+    "B-A:goal_diff:unknown_bouncy": {
+      "diff": 5.3,
+      "lo": 4.65,
+      "hi": 5.96,
+      "n": 100
+    },
+    "B-A:goals_for:all": {
+      "diff": 2.0425,
+      "lo": 1.6525,
+      "hi": 2.43,
+      "n": 400
+    },
+    "B-A:goals_for:nominal": {
+      "diff": 4.5,
+      "lo": 3.5997500000000002,
+      "hi": 5.41,
+      "n": 100
+    },
+    "B-A:goals_for:randomized": {
+      "diff": 3.04,
+      "lo": 2.36,
+      "hi": 3.74,
+      "n": 100
+    },
+    "B-A:goals_for:unknown_sticky": {
+      "diff": 0.49,
+      "lo": 0.06,
+      "hi": 0.95,
+      "n": 100
+    },
+    "B-A:goals_for:unknown_bouncy": {
+      "diff": 0.14,
+      "lo": -0.36,
+      "hi": 0.68,
+      "n": 100
+    },
+    "B-A:points:all": {
+      "diff": 0.43875,
+      "lo": 0.39125,
+      "hi": 0.485,
+      "n": 400
+    },
+    "B-A:points:nominal": {
+      "diff": 0.5,
+      "lo": 0.415,
+      "hi": 0.58,
+      "n": 100
+    },
+    "B-A:points:randomized": {
+      "diff": 0.52,
+      "lo": 0.425,
+      "hi": 0.61,
+      "n": 100
+    },
+    "B-A:points:unknown_sticky": {
+      "diff": 0.25,
+      "lo": 0.16,
+      "hi": 0.34,
+      "n": 100
+    },
+    "B-A:points:unknown_bouncy": {
+      "diff": 0.485,
+      "lo": 0.395,
+      "hi": 0.575,
+      "n": 100
+    },
+    "D-C:goal_diff:all": {
+      "diff": 1.6425,
+      "lo": 1.2899375,
+      "hi": 1.9925,
+      "n": 400
+    },
+    "D-C:goal_diff:nominal": {
+      "diff": 4.54,
+      "lo": 3.86,
+      "hi": 5.25,
+      "n": 100
+    },
+    "D-C:goal_diff:randomized": {
+      "diff": 1.78,
+      "lo": 1.18,
+      "hi": 2.39,
+      "n": 100
+    },
+    "D-C:goal_diff:unknown_sticky": {
+      "diff": -0.16,
+      "lo": -0.66,
+      "hi": 0.34,
+      "n": 100
+    },
+    "D-C:goal_diff:unknown_bouncy": {
+      "diff": 0.41,
+      "lo": -0.2,
+      "hi": 1.0,
+      "n": 100
+    },
+    "D-C:goals_for:all": {
+      "diff": 1.3875,
+      "lo": 1.04,
+      "hi": 1.72,
+      "n": 400
+    },
+    "D-C:goals_for:nominal": {
+      "diff": 4.37,
+      "lo": 3.73,
+      "hi": 5.02,
+      "n": 100
+    },
+    "D-C:goals_for:randomized": {
+      "diff": 1.79,
+      "lo": 1.22,
+      "hi": 2.38,
+      "n": 100
+    },
+    "D-C:goals_for:unknown_sticky": {
+      "diff": 0.09,
+      "lo": -0.39,
+      "hi": 0.55,
+      "n": 100
+    },
+    "D-C:goals_for:unknown_bouncy": {
+      "diff": -0.7,
+      "lo": -1.22,
+      "hi": -0.19,
+      "n": 100
+    },
+    "D-C:points:all": {
+      "diff": -0.01875,
+      "lo": -0.04875,
+      "hi": 0.01125,
+      "n": 400
+    },
+    "D-C:points:nominal": {
+      "diff": 0.015,
+      "lo": 0.0,
+      "hi": 0.035,
+      "n": 100
+    },
+    "D-C:points:randomized": {
+      "diff": 0.02,
+      "lo": 0.0,
+      "hi": 0.05,
+      "n": 100
+    },
+    "D-C:points:unknown_sticky": {
+      "diff": -0.075,
+      "lo": -0.145,
+      "hi": -0.005,
+      "n": 100
+    },
+    "D-C:points:unknown_bouncy": {
+      "diff": -0.035,
+      "lo": -0.125,
+      "hi": 0.05,
+      "n": 100
+    }
+  }
+}

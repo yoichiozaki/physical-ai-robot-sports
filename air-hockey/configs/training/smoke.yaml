@@ -1,0 +1,28 @@
+# Tiny configuration for smoke tests (CI / Colab GPU smoke test). Finishes in about a minute.
+run_name: smoke
+seed: 0
+total_timesteps: 8192
+n_envs: 2
+torch_threads: 2
+device: cpu
+checkpoint_freq: 4096
+
+ppo:
+  learning_rate: 0.0003
+  n_steps: 1024
+  batch_size: 512
+  n_epochs: 2
+
+env:
+  action_mode: direct
+  action_repeat: 2
+
+curriculum:
+  - [0, 0]
+  - [4096, 4]
+
+eval:
+  freq: 4096
+  episodes: 2
+  stage: 4
+  seed: 100000

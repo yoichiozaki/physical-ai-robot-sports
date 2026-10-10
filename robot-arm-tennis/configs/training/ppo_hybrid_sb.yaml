@@ -1,0 +1,27 @@
+# D under the tennis service-box rule (serve must land within 1.62 m of the net): fine-tune the
+# Hybrid AI D against the scripted opponents (same set-up as ppo_hybrid.yaml otherwise).
+run_name: ppo_hybrid_sb
+seed: 3
+total_timesteps: 32000
+n_envs: 16
+checkpoint_freq: 16000
+init_from: checkpoints/ppo_hybrid/best_model.zip
+ppo:
+  n_steps: 128
+  batch_size: 256
+  n_epochs: 10
+  learning_rate: 0.0003
+  gamma: 0.97
+  gae_lambda: 0.95
+  ent_coef: 0.01
+  clip_range: 0.2
+  policy_kwargs: {net_arch: [64, 64]}
+env:
+  mode: hybrid
+  conditions: [nominal, randomized]
+  points_per_episode: 4
+  adaptive: true
+  service_line: 1.62
+eval:
+  freq: 8000
+  episodes: 16

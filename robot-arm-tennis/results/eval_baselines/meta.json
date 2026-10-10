@@ -1,0 +1,57 @@
+{
+  "config": {
+    "output": "results/eval_baselines",
+    "controllers": [
+      {
+        "name": "A: Naive",
+        "spec": "naive"
+      },
+      {
+        "name": "B: Physics",
+        "spec": "physics"
+      },
+      {
+        "name": "B+: Physics+Rule",
+        "spec": "physics_rule"
+      },
+      {
+        "name": "B*: Physics+Adapt",
+        "spec": "physics_adaptive"
+      }
+    ],
+    "opponents": [
+      "steady",
+      "random",
+      "aggressive",
+      "lob",
+      "slow"
+    ],
+    "conditions": [
+      "nominal",
+      "randomized",
+      "unknown_wind",
+      "unknown_court"
+    ],
+    "seeds": [
+      20000,
+      20001,
+      20002,
+      20003,
+      20004,
+      20005,
+      20006,
+      20007,
+      20008,
+      20009,
+      20010,
+      20011
+    ],
+    "points": 20,
+    "workers": 6,
+    "notes": {}
+  },
+  "matches": 960,
+  "wall_time_s": 3276.1,
+  "workers": 6,
+  "generated_at": "2026-10-09T11:22:13+0000"
+}

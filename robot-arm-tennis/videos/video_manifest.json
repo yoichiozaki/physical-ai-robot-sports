@@ -1,0 +1,368 @@
+{
+  "video": "videos/PAI最終課題_yoichiozaki.mp4",
+  "probe": {
+    "duration": 173.54,
+    "codec": "h264",
+    "width": 1280,
+    "height": 720,
+    "fps": "30/1",
+    "pix_fmt": "yuv420p"
+  },
+  "segments": [
+    {
+      "segment": "01_highlight",
+      "type": "simulation",
+      "home": "hybrid:checkpoints/ppo_hybrid/best_model.zip",
+      "away": "steady",
+      "seed": 20000,
+      "condition": "nominal",
+      "game_time": [
+        2.66,
+        13.66
+      ],
+      "playback_speed": 1.0,
+      "seconds": 11.0
+    },
+    {
+      "segment": "02_problem",
+      "type": "card",
+      "seconds": 11,
+      "title": "課題と研究課題"
+    },
+    {
+      "segment": "03_architecture",
+      "type": "card",
+      "seconds": 8,
+      "title": "システム構成"
+    },
+    {
+      "segment": "04_robot",
+      "type": "simulation",
+      "home": "physics",
+      "away": "steady",
+      "seed": 30001,
+      "condition": "nominal",
+      "game_time": [
+        1.012,
+        2.562
+      ],
+      "playback_speed": 0.25,
+      "seconds": 6.167
+    },
+    {
+      "segment": "05_prediction",
+      "type": "simulation",
+      "home": "physics",
+      "away": "steady",
+      "seed": 30002,
+      "condition": "nominal",
+      "game_time": [
+        1.072,
+        2.972
+      ],
+      "playback_speed": 0.4,
+      "seconds": 4.734
+    },
+    {
+      "segment": "06_compare_0",
+      "type": "simulation",
+      "home": "naive",
+      "away": "steady",
+      "seed": 30003,
+      "condition": "nominal",
+      "game_time": [
+        0.0,
+        7.0
+      ],
+      "playback_speed": 1.0,
+      "seconds": 6.967
+    },
+    {
+      "segment": "06_compare_1",
+      "type": "simulation",
+      "home": "physics",
+      "away": "steady",
+      "seed": 30003,
+      "condition": "nominal",
+      "game_time": [
+        0.0,
+        7.0
+      ],
+      "playback_speed": 1.0,
+      "seconds": 6.967
+    },
+    {
+      "segment": "06_compare_2",
+      "type": "simulation",
+      "home": "hybrid:checkpoints/ppo_hybrid/best_model.zip",
+      "away": "steady",
+      "seed": 30003,
+      "condition": "nominal",
+      "game_time": [
+        0.0,
+        7.0
+      ],
+      "playback_speed": 1.0,
+      "seconds": 6.967
+    },
+    {
+      "segment": "07_unknown_court_0",
+      "type": "simulation",
+      "home": "physics",
+      "away": "steady",
+      "seed": 30004,
+      "condition": "unknown_court",
+      "game_time": [
+        0.0,
+        7.0
+      ],
+      "playback_speed": 1.0,
+      "seconds": 6.967
+    },
+    {
+      "segment": "07_unknown_court_1",
+      "type": "simulation",
+      "home": "hybrid:checkpoints/ppo_hybrid/best_model.zip",
+      "away": "steady",
+      "seed": 30004,
+      "condition": "unknown_court",
+      "game_time": [
+        6.86,
+        15.86
+      ],
+      "playback_speed": 1.0,
+      "seconds": 9.034
+    },
+    {
+      "segment": "08_unknown_wind",
+      "type": "simulation",
+      "home": "hybrid:checkpoints/ppo_hybrid/best_model.zip",
+      "away": "steady",
+      "seed": 30005,
+      "condition": "unknown_wind",
+      "game_time": [
+        8.34,
+        16.34
+      ],
+      "playback_speed": 1.0,
+      "seconds": 8.0
+    },
+    {
+      "segment": "09_results_table",
+      "type": "table",
+      "seconds": 10,
+      "title": "定量評価: ポイント取得率（相手 5 種 × 12 試合 × 20 ポイント）",
+      "rows": [
+        [
+          "A: Naive",
+          "1%",
+          "11%",
+          "15%",
+          "46%"
+        ],
+        [
+          "B: Physics",
+          "59%",
+          "65%",
+          "69%",
+          "67%"
+        ],
+        [
+          "B+: Physics+Rule",
+          "71%",
+          "74%",
+          "67%",
+          "71%"
+        ],
+        [
+          "B*: Physics+Adapt",
+          "76%",
+          "85%",
+          "72%",
+          "77%"
+        ],
+        [
+          "C: PPO direct",
+          "54%",
+          "38%",
+          "44%",
+          "57%"
+        ],
+        [
+          "D-: Hybrid w/o adapt",
+          "91%",
+          "85%",
+          "73%",
+          "45%"
+        ],
+        [
+          "D: Hybrid AI",
+          "92%",
+          "90%",
+          "77%",
+          "72%"
+        ]
+      ]
+    },
+    {
+      "segment": "10_point_win",
+      "type": "card",
+      "seconds": 7,
+      "title": "条件別のポイント取得率（95% 信頼区間）"
+    },
+    {
+      "segment": "11_drill",
+      "type": "card",
+      "seconds": 7,
+      "title": "学習と適応の効果: 球出しドリルでの打球精度"
+    },
+    {
+      "segment": "13_adv_ace",
+      "type": "simulation",
+      "home": "hybrid:checkpoints/ppo_league/league/gen_000.zip",
+      "away": "hybrid:checkpoints/ppo_league/league/gen_000.zip",
+      "seed": 41000,
+      "condition": "nominal",
+      "game_time": [
+        0.5,
+        2.76
+      ],
+      "playback_speed": 0.5,
+      "seconds": 3.734
+    },
+    {
+      "segment": "14_adv_league",
+      "type": "card",
+      "seconds": 9,
+      "title": "発展1: 自己対戦リーグ（サービスボックスあり）"
+    },
+    {
+      "segment": "15_adv_rally",
+      "type": "simulation",
+      "home": "hybrid:checkpoints/ppo_league_sb/league/gen_006.zip",
+      "away": "hybrid:checkpoints/ppo_league_sb/league/gen_000.zip",
+      "seed": 41101,
+      "condition": "nominal",
+      "game_time": [
+        33.86,
+        42.46
+      ],
+      "playback_speed": 1.0,
+      "seconds": 8.634
+    },
+    {
+      "segment": "16_adv_vla",
+      "type": "card",
+      "seconds": 9,
+      "title": "発展2: VLA はテニスができるか（惑星テニス）"
+    },
+    {
+      "segment": "vla_moon_e2e",
+      "type": "simulation (VLA, rendered on Colab)",
+      "seconds": 3.534,
+      "name": "vla_moon_e2e",
+      "world": "moon",
+      "seed": 100001,
+      "mode": "vla",
+      "latency": 0.0,
+      "start": 1.6,
+      "kind": "away",
+      "instruction": "hit the ball away from the opponent",
+      "zone": "deep-left",
+      "hit": 0,
+      "in_court": 0,
+      "in_zone": 0,
+      "net": 0,
+      "landing_error_m": null,
+      "steps": 218,
+      "infer_calls": 44,
+      "infer_ms": 354.9671850003671,
+      "min_racket_ball_m": 0.7475951440937737,
+      "t_min": 3.0999999999997696
+    },
+    {
+      "segment": "vla_earth_hier",
+      "type": "simulation (VLA, rendered on Colab)",
+      "seconds": 2.934,
+      "name": "vla_earth_hier",
+      "world": "earth",
+      "seed": 100001,
+      "mode": "hier",
+      "latency": 0.36,
+      "start": 0.3,
+      "kind": "away",
+      "instruction": "hit the ball away from the opponent",
+      "zone": "deep-left",
+      "hit": 1,
+      "in_court": 1,
+      "in_zone": 1,
+      "net": 0,
+      "landing_error_m": 0.12749245529177258,
+      "steps": 121,
+      "infer_calls": 1,
+      "infer_ms": 352.8707539990137,
+      "min_racket_ball_m": 0.0505889985141602,
+      "t_min": 1.2199999999999764
+    },
+    {
+      "segment": "vla_earth_hier_late",
+      "type": "simulation (VLA, rendered on Colab)",
+      "seconds": 2.834,
+      "name": "vla_earth_hier_late",
+      "world": "earth",
+      "seed": 100001,
+      "mode": "hier",
+      "latency": 1.4,
+      "start": 0.3,
+      "kind": "away",
+      "instruction": "hit the ball away from the opponent",
+      "zone": "deep-left",
+      "hit": 1,
+      "in_court": 1,
+      "in_zone": 0,
+      "net": 0,
+      "landing_error_m": 0.8462279863371726,
+      "steps": 117,
+      "infer_calls": 1,
+      "infer_ms": 337.49282999997376,
+      "min_racket_ball_m": 0.05009373917431991,
+      "t_min": 1.2199999999999764
+    },
+    {
+      "segment": "vla_moon_hier_late",
+      "type": "simulation (VLA, rendered on Colab)",
+      "seconds": 5.067,
+      "name": "vla_moon_hier_late",
+      "world": "moon",
+      "seed": 100001,
+      "mode": "hier",
+      "latency": 1.4,
+      "start": 1.6,
+      "kind": "away",
+      "instruction": "hit the ball away from the opponent",
+      "zone": "deep-left",
+      "hit": 1,
+      "in_court": 1,
+      "in_zone": 1,
+      "net": 0,
+      "landing_error_m": 0.208731001363619,
+      "steps": 294,
+      "infer_calls": 1,
+      "infer_ms": 337.48161299809,
+      "min_racket_ball_m": 0.049557602934400626,
+      "t_min": 3.039999999999776
+    },
+    {
+      "segment": "17_adv_vla_latency",
+      "type": "card",
+      "seconds": 8,
+      "title": "VLA に許される「考える時間」は世界の速さで決まる"
+    },
+    {
+      "segment": "12_summary",
+      "type": "card",
+      "seconds": 11,
+      "title": "まとめと限界"
+    }
+  ]
+}

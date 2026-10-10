@@ -1,0 +1,625 @@
+player,label,count
+gen_000,rl-122,692
+gen_000,rl-222,200
+gen_000,rl-202,49
+gen_003,rl-222,967
+gen_003,rl-202,137
+gen_000,rl-222,194
+gen_000,rl-122,603
+gen_000,rl-202,231
+gen_002,rl-222,885
+gen_002,rl-202,328
+gen_000,rl-122,679
+gen_000,rl-202,166
+gen_000,rl-222,195
+gen_000,rl-102,47
+gen_004,rl-222,1166
+gen_004,rl-202,82
+gen_003,rl-222,931
+gen_003,rl-202,406
+gen_000,rl-122,686
+gen_000,rl-222,204
+gen_000,rl-202,20
+gen_005,rl-222,1209
+gen_005,rl-202,94
+gen_000,rl-222,195
+gen_000,rl-122,752
+gen_000,rl-202,148
+gen_000,rl-222,194
+gen_000,rl-122,873
+gen_000,rl-102,42
+gen_000,rl-202,160
+gen_004,rl-222,1151
+gen_004,rl-202,236
+gen_000,rl-222,198
+gen_000,rl-122,835
+gen_000,rl-202,252
+gen_000,rl-222,242
+gen_000,rl-122,771
+gen_000,rl-202,383
+gen_000,rl-122,1142
+gen_000,rl-202,191
+gen_000,rl-222,205
+gen_000,rl-102,75
+gen_001,rl-222,344
+gen_001,rl-122,1005
+gen_001,rl-202,281
+gen_001,rl-222,446
+gen_001,rl-122,762
+gen_001,rl-202,212
+gen_002,rl-222,897
+gen_002,rl-202,180
+gen_000,rl-222,200
+gen_000,rl-122,821
+gen_000,rl-202,98
+gen_000,rl-122,444
+gen_000,rl-202,146
+gen_000,rl-222,200
+gen_000,rl-102,49
+gen_006,rl-222,1140
+gen_006,rl-202,45
+gen_006,rl-222,1278
+gen_006,rl-202,95
+gen_000,rl-222,198
+gen_000,rl-202,717
+gen_000,rl-122,758
+gen_000,rl-102,216
+gen_005,rl-222,887
+gen_005,rl-202,183
+gen_000,rl-222,194
+gen_000,rl-202,608
+gen_000,rl-122,794
+gen_000,rl-102,367
+gen_000,rl-122,884
+gen_000,rl-202,95
+gen_000,rl-102,139
+gen_000,rl-222,199
+B+: Physics+Rule,open-court,1917
+B+: Physics+Rule,open-court,1775
+B*: Physics+Adapt,open-court,1599
+gen_000,rl-122,888
+gen_000,rl-202,528
+gen_000,rl-222,202
+gen_000,rl-102,470
+gen_000,rl-222,194
+gen_000,rl-122,272
+gen_000,rl-102,995
+gen_000,rl-202,771
+gen_000,rl-222,196
+gen_000,rl-122,319
+gen_000,rl-102,174
+gen_000,rl-202,134
+opp:steady,centre,1505
+gen_000,rl-202,566
+gen_000,rl-222,194
+gen_000,rl-122,474
+gen_000,rl-102,1123
+opp:aggressive,corner,480
+opp:steady,centre,1476
+gen_000,rl-222,200
+gen_000,rl-122,333
+gen_000,rl-202,141
+gen_000,rl-102,81
+gen_000,rl-202,1036
+gen_000,rl-222,196
+gen_000,rl-102,3032
+gen_000,rl-122,522
+gen_000,rl-202,205
+gen_000,rl-222,259
+gen_000,rl-122,391
+gen_000,rl-102,311
+gen_000,rl-122,1152
+gen_000,rl-202,1103
+gen_000,rl-102,269
+gen_000,rl-222,193
+gen_000,rl-122,186
+gen_000,rl-222,200
+gen_000,rl-202,303
+opp:aggressive,corner,713
+gen_000,rl-222,307
+gen_000,rl-122,618
+gen_000,rl-102,4160
+gen_000,rl-202,950
+opp:random,random,1127
+B: Physics,centre,4921
+gen_000,rl-222,235
+gen_000,rl-102,581
+gen_000,rl-202,593
+gen_000,rl-122,158
+B*: Physics+Adapt,open-court,1696
+opp:random,random,627
+B: Physics,centre,4607
+gen_000,rl-122,360
+gen_000,rl-222,194
+gen_000,rl-202,951
+gen_000,rl-102,453
+gen_000,rl-222,195
+gen_000,rl-102,584
+gen_000,rl-202,149
+gen_000,rl-122,113
+opp:slow,centre,501
+gen_001,rl-222,445
+gen_001,rl-122,289
+gen_001,rl-202,49
+gen_002,rl-222,625
+opp:lob,lob,698
+gen_001,rl-222,493
+gen_001,rl-122,138
+gen_001,rl-222,488
+gen_001,rl-122,188
+gen_000,rl-102,760
+gen_000,rl-222,196
+gen_000,rl-122,340
+gen_002,rl-222,683
+gen_003,rl-222,634
+gen_001,rl-222,498
+gen_001,rl-122,182
+gen_003,rl-222,1027
+gen_003,rl-202,135
+gen_004,rl-222,576
+gen_004,rl-202,43
+gen_001,rl-222,440
+gen_001,rl-122,286
+gen_001,rl-202,40
+gen_004,rl-222,804
+gen_004,rl-202,51
+gen_005,rl-222,580
+opp:lob,lob,926
+gen_001,rl-222,495
+gen_001,rl-122,189
+gen_001,rl-222,488
+gen_001,rl-122,186
+gen_001,rl-222,389
+gen_001,rl-122,333
+gen_001,rl-202,93
+gen_006,rl-222,680
+gen_006,rl-202,48
+gen_001,rl-222,390
+gen_001,rl-122,281
+gen_005,rl-222,630
+gen_005,rl-202,46
+gen_001,rl-222,498
+gen_001,rl-122,139
+gen_006,rl-222,668
+opp:slow,centre,1454
+gen_001,rl-222,449
+gen_001,rl-202,541
+gen_001,rl-122,342
+B+: Physics+Rule,open-court,1171
+B+: Physics+Rule,open-court,968
+gen_001,rl-222,864
+gen_001,rl-122,38
+gen_001,rl-202,122
+gen_001,rl-222,436
+gen_001,rl-122,179
+gen_001,rl-202,159
+gen_001,rl-222,442
+gen_001,rl-122,399
+gen_001,rl-202,684
+B*: Physics+Adapt,open-court,1095
+B*: Physics+Adapt,open-court,961
+gen_001,rl-222,396
+gen_001,rl-122,124
+gen_001,rl-202,134
+opp:steady,centre,608
+gen_001,rl-222,1757
+gen_001,rl-122,227
+gen_001,rl-202,675
+opp:random,random,497
+B: Physics,centre,2154
+B: Physics,centre,2717
+gen_001,rl-222,443
+gen_001,rl-202,401
+gen_001,rl-122,50
+gen_001,rl-202,362
+gen_001,rl-222,330
+gen_001,rl-122,411
+opp:random,random,529
+gen_001,rl-222,386
+gen_001,rl-202,475
+gen_001,rl-122,53
+opp:aggressive,corner,669
+opp:steady,centre,542
+opp:aggressive,corner,543
+gen_001,rl-222,933
+gen_001,rl-122,58
+gen_001,rl-202,62
+gen_001,rl-222,347
+gen_001,rl-202,175
+gen_001,rl-122,76
+gen_001,rl-222,3376
+gen_001,rl-202,1334
+gen_001,rl-122,165
+gen_001,rl-222,568
+gen_001,rl-202,339
+gen_001,rl-122,65
+opp:slow,centre,440
+opp:lob,lob,646
+gen_001,rl-222,653
+gen_001,rl-202,543
+gen_001,rl-122,66
+gen_002,rl-222,645
+gen_003,rl-222,724
+gen_001,rl-202,102
+gen_001,rl-222,533
+gen_001,rl-122,190
+gen_003,rl-222,636
+gen_002,rl-222,630
+gen_002,rl-222,666
+opp:slow,centre,344
+opp:lob,lob,590
+gen_002,rl-222,676
+gen_004,rl-222,710
+gen_004,rl-202,49
+gen_001,rl-222,685
+gen_001,rl-122,94
+gen_001,rl-202,53
+gen_002,rl-222,582
+gen_002,rl-222,766
+gen_005,rl-222,630
+gen_002,rl-222,584
+gen_006,rl-222,677
+gen_006,rl-222,725
+gen_005,rl-222,688
+gen_005,rl-202,52
+gen_002,rl-222,716
+gen_004,rl-222,876
+B+: Physics+Rule,open-court,920
+B+: Physics+Rule,open-court,915
+gen_002,rl-222,583
+gen_002,rl-202,132
+gen_002,rl-222,917
+gen_002,rl-202,61
+opp:steady,centre,516
+gen_002,rl-222,542
+gen_002,rl-202,316
+B*: Physics+Adapt,open-court,770
+gen_002,rl-222,1472
+gen_002,rl-202,564
+B*: Physics+Adapt,open-court,731
+gen_002,rl-222,488
+gen_002,rl-202,504
+gen_002,rl-222,916
+gen_002,rl-202,333
+gen_002,rl-222,615
+gen_002,rl-202,214
+opp:random,random,481
+B: Physics,centre,2136
+gen_002,rl-202,198
+gen_002,rl-222,560
+opp:random,random,470
+opp:aggressive,corner,662
+gen_002,rl-222,446
+gen_002,rl-202,134
+gen_002,rl-222,382
+gen_002,rl-202,287
+opp:aggressive,corner,613
+opp:steady,centre,680
+gen_002,rl-222,803
+gen_002,rl-202,432
+gen_002,rl-222,676
+gen_002,rl-202,187
+opp:lob,lob,453
+gen_002,rl-222,906
+gen_002,rl-222,2859
+gen_002,rl-202,952
+opp:slow,centre,486
+opp:lob,lob,529
+gen_002,rl-222,669
+gen_002,rl-222,831
+gen_002,rl-202,58
+gen_003,rl-222,633
+gen_004,rl-222,583
+gen_004,rl-222,631
+gen_003,rl-222,677
+gen_003,rl-222,670
+gen_006,rl-222,682
+gen_003,rl-222,676
+opp:slow,centre,423
+gen_003,rl-222,630
+gen_005,rl-222,1005
+gen_005,rl-202,148
+gen_006,rl-222,681
+gen_003,rl-222,550
+gen_003,rl-202,261
+gen_003,rl-222,497
+gen_003,rl-202,203
+B: Physics,centre,3083
+gen_003,rl-222,675
+gen_003,rl-202,214
+gen_005,rl-222,585
+gen_003,rl-222,645
+B+: Physics+Rule,open-court,967
+B+: Physics+Rule,open-court,784
+gen_003,rl-222,592
+gen_003,rl-202,249
+B*: Physics+Adapt,open-court,719
+B: Physics,centre,2039
+opp:steady,centre,481
+gen_003,rl-222,768
+gen_003,rl-202,114
+opp:steady,centre,613
+opp:random,random,516
+gen_003,rl-222,909
+gen_003,rl-202,59
+gen_003,rl-222,835
+opp:aggressive,corner,568
+gen_003,rl-222,1207
+gen_003,rl-222,2276
+gen_003,rl-202,557
+B*: Physics+Adapt,open-court,683
+gen_003,rl-222,540
+gen_003,rl-202,90
+opp:random,random,507
+opp:aggressive,corner,625
+opp:lob,lob,599
+gen_003,rl-222,769
+opp:slow,centre,532
+opp:lob,lob,502
+gen_004,rl-222,637
+gen_003,rl-222,3451
+gen_003,rl-202,1115
+gen_003,rl-222,668
+opp:slow,centre,324
+gen_004,rl-222,679
+gen_005,rl-222,538
+gen_003,rl-222,1113
+gen_003,rl-202,196
+B: Physics,centre,3062
+gen_003,rl-222,678
+gen_003,rl-202,276
+gen_004,rl-222,534
+gen_004,rl-222,581
+gen_003,rl-222,950
+gen_006,rl-222,728
+gen_004,rl-222,851
+gen_004,rl-202,173
+B+: Physics+Rule,open-court,830
+gen_006,rl-222,581
+gen_004,rl-222,624
+gen_004,rl-202,292
+B*: Physics+Adapt,open-court,637
+gen_004,rl-222,571
+gen_004,rl-202,42
+gen_004,rl-222,842
+gen_004,rl-202,175
+opp:steady,centre,435
+gen_004,rl-222,1041
+gen_004,rl-202,99
+B+: Physics+Rule,open-court,1253
+gen_005,rl-222,930
+gen_005,rl-202,96
+gen_004,rl-222,2738
+gen_004,rl-202,559
+gen_004,rl-222,883
+B*: Physics+Adapt,open-court,766
+opp:steady,centre,582
+gen_004,rl-222,945
+gen_004,rl-202,44
+gen_004,rl-222,910
+gen_004,rl-202,58
+opp:random,random,427
+opp:random,random,471
+gen_004,rl-222,628
+gen_004,rl-202,133
+B: Physics,centre,3079
+gen_004,rl-222,3256
+gen_004,rl-202,728
+gen_004,rl-222,652
+gen_004,rl-202,97
+opp:aggressive,corner,563
+B: Physics,centre,3586
+opp:aggressive,corner,591
+gen_004,rl-222,986
+gen_004,rl-222,706
+opp:slow,centre,398
+opp:lob,lob,422
+gen_006,rl-222,628
+gen_005,rl-222,638
+gen_004,rl-222,962
+gen_004,rl-202,68
+opp:slow,centre,461
+gen_005,rl-222,668
+gen_004,rl-222,654
+B+: Physics+Rule,open-court,829
+gen_005,rl-222,580
+gen_005,rl-202,135
+B+: Physics+Rule,open-court,1062
+opp:lob,lob,562
+gen_005,rl-222,570
+gen_005,rl-202,164
+gen_005,rl-222,2147
+gen_005,rl-202,167
+gen_006,rl-222,692
+gen_005,rl-222,1005
+gen_005,rl-202,172
+B*: Physics+Adapt,open-court,816
+gen_005,rl-222,603
+gen_005,rl-202,134
+gen_005,rl-222,1068
+gen_005,rl-202,52
+B*: Physics+Adapt,open-court,1148
+opp:steady,centre,549
+gen_005,rl-222,918
+gen_005,rl-202,44
+gen_005,rl-222,841
+B: Physics,centre,1721
+gen_005,rl-222,589
+gen_005,rl-202,90
+opp:aggressive,corner,612
+gen_005,rl-222,1094
+gen_005,rl-202,63
+B: Physics,centre,3326
+gen_005,rl-222,694
+gen_005,rl-202,98
+opp:random,random,546
+gen_005,rl-222,1278
+gen_005,rl-222,3135
+gen_005,rl-202,614
+opp:lob,lob,560
+opp:slow,centre,368
+opp:lob,lob,496
+gen_005,rl-222,1127
+gen_005,rl-202,145
+opp:steady,centre,654
+opp:random,random,467
+gen_005,rl-222,693
+gen_005,rl-222,650
+gen_005,rl-202,53
+opp:aggressive,corner,632
+opp:slow,centre,361
+gen_006,rl-222,532
+gen_006,rl-202,266
+gen_006,rl-222,549
+gen_006,rl-202,197
+B*: Physics+Adapt,open-court,673
+gen_006,rl-222,883
+B*: Physics+Adapt,open-court,921
+B+: Physics+Rule,open-court,785
+gen_006,rl-222,1345
+B+: Physics+Rule,open-court,1058
+gen_006,rl-222,740
+gen_006,rl-202,172
+gen_006,rl-222,812
+gen_006,rl-202,171
+opp:random,random,470
+opp:steady,centre,510
+opp:random,random,510
+gen_006,rl-222,2685
+gen_006,rl-202,511
+gen_006,rl-222,519
+gen_006,rl-202,88
+gen_006,rl-222,1179
+gen_006,rl-202,99
+gen_006,rl-222,507
+gen_006,rl-202,97
+opp:aggressive,corner,510
+opp:steady,centre,734
+gen_006,rl-222,652
+gen_006,rl-202,338
+opp:aggressive,corner,938
+B: Physics,centre,3115
+gen_006,rl-222,847
+opp:lob,lob,463
+opp:lob,lob,563
+gen_006,rl-222,761
+gen_006,rl-202,158
+opp:slow,centre,401
+gen_006,rl-222,706
+gen_006,rl-222,797
+opp:slow,centre,523
+B: Physics,centre,3008
+gen_006,rl-222,2658
+gen_006,rl-202,331
+B*: Physics+Adapt,open-court,4389
+B: Physics,centre,3849
+B+: Physics+Rule,open-court,4983
+B*: Physics+Adapt,open-court,5118
+B+: Physics+Rule,open-court,5926
+opp:aggressive,corner,1122
+B: Physics,centre,4819
+opp:random,random,4173
+B: Physics,centre,4941
+B: Physics,centre,1102
+opp:random,random,3978
+B: Physics,centre,1875
+opp:aggressive,corner,1492
+B: Physics,centre,7874
+B: Physics,centre,5805
+B: Physics,centre,5530
+B: Physics,centre,4948
+B: Physics,centre,3916
+opp:steady,centre,6018
+opp:steady,centre,6379
+B: Physics,centre,5131
+opp:lob,lob,2928
+B+: Physics+Rule,open-court,2207
+B+: Physics+Rule,open-court,2110
+B*: Physics+Adapt,open-court,3022
+B: Physics,centre,5883
+B+: Physics+Rule,open-court,3825
+opp:steady,centre,1908
+B+: Physics+Rule,open-court,3412
+B+: Physics+Rule,open-court,2030
+B+: Physics+Rule,open-court,633
+B*: Physics+Adapt,open-court,3746
+opp:random,random,2058
+opp:aggressive,corner,911
+opp:aggressive,corner,648
+opp:random,random,1935
+B: Physics,centre,7418
+opp:steady,centre,2255
+opp:slow,centre,6079
+opp:lob,lob,2994
+B+: Physics+Rule,open-court,3004
+B+: Physics+Rule,open-court,916
+B: Physics,centre,7881
+B+: Physics+Rule,open-court,2028
+B+: Physics+Rule,open-court,778
+B+: Physics+Rule,open-court,877
+opp:slow,centre,587
+opp:lob,lob,1414
+opp:slow,centre,626
+opp:aggressive,corner,645
+B*: Physics+Adapt,open-court,576
+opp:lob,lob,1238
+B*: Physics+Adapt,open-court,737
+opp:aggressive,corner,673
+B*: Physics+Adapt,open-court,1688
+B*: Physics+Adapt,open-court,1524
+B*: Physics+Adapt,open-court,1889
+opp:random,random,1773
+opp:slow,centre,286
+opp:steady,centre,2160
+B+: Physics+Rule,open-court,2330
+B*: Physics+Adapt,open-court,1187
+B*: Physics+Adapt,open-court,2937
+opp:slow,centre,6114
+B*: Physics+Adapt,open-court,4352
+opp:steady,centre,2067
+opp:lob,lob,1301
+opp:slow,centre,995
+B*: Physics+Adapt,open-court,1486
+B*: Physics+Adapt,open-court,2447
+opp:aggressive,corner,766
+opp:steady,centre,878
+opp:random,random,1517
+opp:aggressive,corner,1400
+opp:lob,lob,1576
+opp:random,random,3090
+opp:random,random,534
+opp:aggressive,corner,759
+opp:steady,centre,577
+opp:aggressive,corner,927
+opp:random,random,505
+opp:steady,centre,4996
+opp:slow,centre,1576
+opp:steady,centre,5167
+opp:steady,centre,4200
+opp:random,random,3993
+opp:steady,centre,4484
+opp:lob,lob,3776
+opp:random,random,4311
+opp:steady,centre,4940
+opp:slow,centre,4257
+opp:aggressive,corner,1109
+opp:lob,lob,3424
+opp:slow,centre,5149
+opp:aggressive,corner,539
+opp:lob,lob,747
+opp:slow,centre,209
+opp:slow,centre,255
+opp:steady,centre,6437
+opp:aggressive,corner,700
+opp:aggressive,corner,1216
+opp:random,random,4716
+opp:lob,lob,767
+opp:random,random,3469
+opp:lob,lob,4896
+opp:slow,centre,2600
+opp:lob,lob,3209
+opp:random,random,3868
+opp:lob,lob,3392
+opp:slow,centre,5139
+opp:lob,lob,4075
+opp:slow,centre,5579

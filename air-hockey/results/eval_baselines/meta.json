@@ -1,0 +1,65 @@
+{
+  "config": {
+    "output": "results/eval_baselines",
+    "controllers": [
+      {
+        "name": "A: Reactive",
+        "spec": "reactive"
+      },
+      {
+        "name": "B: Physics",
+        "spec": "physics"
+      },
+      {
+        "name": "B+: Physics+Rule",
+        "spec": "physics_heuristic"
+      },
+      {
+        "name": "B*: Physics+Adapt",
+        "spec": "physics_adaptive"
+      }
+    ],
+    "opponents": [
+      "stationary",
+      "random",
+      "reactive",
+      "defensive",
+      "aggressive"
+    ],
+    "conditions": [
+      "nominal",
+      "randomized",
+      "unknown_sticky",
+      "unknown_bouncy"
+    ],
+    "seeds": [
+      10000,
+      10001,
+      10002,
+      10003,
+      10004,
+      10005,
+      10006,
+      10007,
+      10008,
+      10009,
+      10010,
+      10011,
+      10012,
+      10013,
+      10014,
+      10015,
+      10016,
+      10017,
+      10018,
+      10019
+    ],
+    "match_duration": 60.0,
+    "workers": 6,
+    "notes": {}
+  },
+  "matches": 1600,
+  "wall_time_s": 251.1,
+  "workers": 6,
+  "generated_at": "2026-10-09T05:49:04+0000"
+}

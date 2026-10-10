@@ -1,0 +1,12 @@
+# Part 2 of the main evaluation (learned controllers).
+output: results/eval_learned
+match_duration: 60
+workers: 0
+opponents: [stationary, random, reactive, defensive, aggressive]
+conditions: [nominal, randomized, unknown_sticky, unknown_bouncy]
+seeds: [10000, 10001, 10002, 10003, 10004, 10005, 10006, 10007, 10008, 10009,
+        10010, 10011, 10012, 10013, 10014, 10015, 10016, 10017, 10018, 10019]
+controllers:
+  - {name: "C: PPO (pure RL)", spec: "ppo:checkpoints/ppo_direct_s0/final_model.zip"}
+  - {name: "D: Hybrid AI", spec: "hybrid:checkpoints/ppo_hybrid_s0/final_model.zip"}
+  - {name: "D*: Hybrid AI+Adapt", spec: "hybrid_adaptive:checkpoints/ppo_hybrid_s0/final_model.zip"}

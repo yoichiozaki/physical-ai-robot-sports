@@ -1,0 +1,2 @@
+# Google Colab: use the runtime's preinstalled CUDA build of PyTorch; install the rest pinned.
+-r base.txt

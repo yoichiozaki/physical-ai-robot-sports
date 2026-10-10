@@ -1,0 +1,13 @@
+# Baselines without learning-based tactics (Phase 8 grid). Seeds 20000+ are evaluation-only;
+# "unknown_*" conditions are never used for training or for fitting the residual model.
+output: results/eval_baselines
+points: 20
+workers: 0
+controllers:
+  - {name: "A: Naive", spec: naive}
+  - {name: "B: Physics", spec: physics}
+  - {name: "B+: Physics+Rule", spec: physics_rule}
+  - {name: "B*: Physics+Adapt", spec: physics_adaptive}
+opponents: [steady, random, aggressive, lob, slow]
+conditions: [nominal, randomized, unknown_wind, unknown_court]
+seeds: [20000, 20001, 20002, 20003, 20004, 20005, 20006, 20007, 20008, 20009, 20010, 20011]

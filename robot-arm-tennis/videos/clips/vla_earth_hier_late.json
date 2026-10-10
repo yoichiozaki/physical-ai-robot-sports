@@ -1,0 +1,21 @@
+{
+  "name": "vla_earth_hier_late",
+  "world": "earth",
+  "seed": 100001,
+  "mode": "hier",
+  "latency": 1.4,
+  "start": 0.3,
+  "kind": "away",
+  "instruction": "hit the ball away from the opponent",
+  "zone": "deep-left",
+  "hit": 1,
+  "in_court": 1,
+  "in_zone": 0,
+  "net": 0,
+  "landing_error_m": 0.8462279863371726,
+  "steps": 117,
+  "infer_calls": 1,
+  "infer_ms": 337.49282999997376,
+  "min_racket_ball_m": 0.05009373917431991,
+  "t_min": 1.2199999999999764
+}

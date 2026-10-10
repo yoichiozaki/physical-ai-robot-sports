@@ -1,0 +1,13 @@
+# Part 1 of the main evaluation (baselines). Merge: python scripts/evaluate.py --merge results/eval_baselines results/eval_learned --output results/eval_main
+output: results/eval_baselines
+match_duration: 60
+workers: 0
+opponents: [stationary, random, reactive, defensive, aggressive]
+conditions: [nominal, randomized, unknown_sticky, unknown_bouncy]
+seeds: [10000, 10001, 10002, 10003, 10004, 10005, 10006, 10007, 10008, 10009,
+        10010, 10011, 10012, 10013, 10014, 10015, 10016, 10017, 10018, 10019]
+controllers:
+  - {name: "A: Reactive", spec: reactive}
+  - {name: "B: Physics", spec: physics}
+  - {name: "B+: Physics+Rule", spec: physics_heuristic}
+  - {name: "B*: Physics+Adapt", spec: physics_adaptive}
